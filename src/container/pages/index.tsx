@@ -2,11 +2,17 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import DummyVideo from "@/assets/img/dummy-video.png";
-import DummyImage from "@/assets/img/dummy-image.png";
+// import DummyImage from "@/assets/img/dummy-image.png";
 import "./style.css";
-import { ArrowRightOutlined } from "@ant-design/icons";
+// import { ArrowRightOutlined } from "@ant-design/icons";
+import { Button } from "@/components";
 
 export const Pages = () => {
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <motion.section
       id="pages"
@@ -25,6 +31,48 @@ export const Pages = () => {
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <div className="m-0 lg:m-10">
+        {/* Video Section */}
+        <motion.div
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.5 }}
+          className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-20 p-4"
+          initial="hidden"
+          variants={fadeInUp}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          <div className="w-full md:w-1/2">
+            <Image src={DummyVideo} alt="Video" />
+          </div>
+          <div className="w-full md:w-1/2 flex flex-col gap-8">
+            <h4 className="font-bold text-3xl md:text-4xl lg:text-5xl">
+              About WashingAI
+              {/* Unveil{" "}
+              <span className="bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent">
+                the Secrets of the{" "}
+              </span>
+              WhatssBot */}
+            </h4>
+            <p className="text-lg md:text-xl lg:text-2xl">
+              Washing AI is a decentralized application (dApp) built on the
+              Ethereum blockchain. It harnesses the power of smart contracts and
+              artificial intelligence (AI) to provide a comprehensive suite of
+              tools aimed at enhancing user privacy and optimizing trading
+              efficiency within the cryptocurrency ecosystem.
+            </p>
+            <div className="flex flex-col md:flex-row gap-4 md:gap-8">
+              <Button
+                onClick={() => alert("read more")}
+                label="WashingAI Bot"
+              />
+              <Button
+                onClick={() => alert("read more")}
+                label="Documentation"
+                variant="ghost"
+              />
+            </div>
+          </div>
+        </motion.div>
+
         <motion.div
           className="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-40 mt-20"
           initial="hidden"
@@ -80,7 +128,7 @@ export const Pages = () => {
           </div>
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           className="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-40 my-20"
           initial="hidden"
           whileInView="visible"
@@ -134,10 +182,10 @@ export const Pages = () => {
               </div>
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
 
-        <motion.div
-          className="h-auto lg:h-screen flex items-center justify-center p-8 lg:p-20 background-full"
+        {/* <motion.div
+          className="h-auto lg:h-screen flex items-center justify-center p-8 background-full mt-20"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.1 }}
@@ -169,7 +217,6 @@ export const Pages = () => {
                       Privacy-Preserving Transactions
                     </h4>
                   </div>
-                  <ArrowRightOutlined />
                 </div>
                 <div className="flex flex-row items-center justify-between">
                   <div className="flex gap-5 items-center">
@@ -178,7 +225,6 @@ export const Pages = () => {
                       Fiat On-Ramps and Off-Ramps
                     </h4>
                   </div>
-                  <ArrowRightOutlined />
                 </div>
                 <div className="flex flex-row items-center justify-between">
                   <div className="flex gap-5 items-center">
@@ -187,7 +233,6 @@ export const Pages = () => {
                       Real-Time Market Analysis
                     </h4>
                   </div>
-                  <ArrowRightOutlined />
                 </div>
                 <div className="flex flex-row items-center justify-between">
                   <div className="flex gap-5 items-center">
@@ -196,12 +241,11 @@ export const Pages = () => {
                       High-Frequency Trading
                     </h4>
                   </div>
-                  <ArrowRightOutlined />
                 </div>
               </div>
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </motion.section>
   );

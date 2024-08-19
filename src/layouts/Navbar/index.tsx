@@ -15,7 +15,7 @@ export const Navbar = () => {
         "sticky top-0 px-8 py-2 lg:py-0 sm:py-4 xs:py-4 mb-10 z-20 bg-black bg-opacity-50"
       }
     >
-      <div className="-m-4 lg:m-10 flex items-center justify-between">
+      <div className="m-auto max-w-screen-2xl flex items-center justify-between">
         <Image alt="Logo Img" src={Logo} />
         <div className="flex items-center gap-8 justify-between md:hidden">
           <button
@@ -42,21 +42,21 @@ export const Navbar = () => {
             onClick={() => setMenuOpen(!menuOpen)}
             className="text-white no-underline text-[16px] font-medium"
           >
-            Pages
+            About
           </Link>
           <Link
             href={"#support"}
             onClick={() => setMenuOpen(!menuOpen)}
             className="text-white no-underline text-[16px] font-medium"
           >
-            Support
+            FAQ
           </Link>
           <Link
             href={"#contact"}
             onClick={() => setMenuOpen(!menuOpen)}
             className="text-white no-underline text-[16px] font-medium"
           >
-            Contact
+            Documentation
           </Link>
           <div className="md:hidden">
             <Button
@@ -69,7 +69,7 @@ export const Navbar = () => {
         <div className="hidden md:block">
           <Button
             onClick={() => alert("Clicked")}
-            label="Get started free"
+            label="$WASH"
             variant="primary"
           />
         </div>

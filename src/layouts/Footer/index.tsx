@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer className="p-8 m-0 lg:m-10 text-white">
-      <div className="flex flex-col md:flex-row md:justify-between gap-8 mb-10">
-        <div className="w-full md:w-1/3">
+    <footer className="p-8 m-auto text-white max-w-screen-2xl">
+      <div className="flex flex-col md:flex-row md:justify-end gap-8 mb-10">
+        {/* <div className="w-full md:w-1/3">
           <h5 className="font-bold text-lg mb-2">
             WHATSBOT.AI - Whatsapp Bot Website
           </h5>
@@ -15,8 +15,8 @@ export const Footer = () => {
             accusamus omnis commodi, dolor ipsa est saepe repudiandae natus.
             Temporibus officiis, incidunt optio possimus illum voluptas.
           </p>
-        </div>
-        <div className="w-full md:w-1/4">
+        </div> */}
+        {/* <div className="w-full md:w-1/4">
           <h5 className="font-bold text-lg mb-2">Information</h5>
           <div className="flex flex-col gap-y-2">
             <Link
@@ -61,44 +61,32 @@ export const Footer = () => {
               Blog
             </Link>
           </div>
-        </div>
-        <div className="w-full md:w-1/4">
-          <h5 className="font-bold text-lg mb-2">Contact</h5>
-          <div className="flex flex-col gap-y-2">
-            <Link
-              href={"#press"}
-              className="no-underline hover:underline text-sm"
-            >
-              Phone : +123 456 789
-            </Link>
+        </div> */}
+        <div className="w-full md:w-1/4 flex flex-wrap justify-end">
+          <div className="font-bold text-xl !text-left mb-2">Contact Us</div>
+          <div className="w-full text-right my-2">
             <Link
               href={"#press"}
               className="no-underline hover:underline text-sm"
             >
               Email : @example.com
             </Link>
-            <Link
-              href={"#press"}
-              className="no-underline hover:underline text-sm"
-            >
-              Address Line 01
-            </Link>
           </div>
         </div>
       </div>
       <div className="flex flex-col md:flex-row md:justify-between items-center gap-8">
         <div className="text-sm">
-          <h5>&copy; WHATSBOT.AI @2024 All rights reserved.</h5>
+          <h5>&copy; WashingAI 2024 All rights reserved.</h5>
         </div>
         <div className="flex flex-wrap justify-center md:justify-start gap-4 text-sm">
           <Link href={"#terms"} className="no-underline hover:underline">
-            Terms
+            Contract
           </Link>
           <Link href={"#privacy"} className="no-underline hover:underline">
-            Privacy
+            Documentation
           </Link>
           <Link href={"#cookies"} className="no-underline hover:underline">
-            Cookies
+            Chart
           </Link>
         </div>
         <div className="flex gap-4">

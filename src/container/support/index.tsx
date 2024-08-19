@@ -16,26 +16,25 @@ export const Support = () => {
   const features = [
     {
       img: CableImg,
-      label: 'Privacy-Preserving Transactions',
-      desc: 'Leveraging zero-knowledge proof technology, Washing AI ensures maximum anonymity for users by obfuscating transaction details. This is crucial for safeguarding user privacy and security in the cryptocurrency space.'
+      label: "Privacy-Preserving Transactions",
+      desc: "Leveraging zero-knowledge proof technology, Washing AI ensures maximum anonymity for users by obfuscating transaction details. This is crucial for safeguarding user privacy and security in the cryptocurrency space.",
     },
     {
       img: CableImg,
-      label: 'Fiat On-Ramps and Off-Ramps',
-      desc: 'The platform facilitates seamless conversion between cryptocurrencies and fiat currencies, making it accessible to a broader audience and simplifying the process of entering and exiting the cryptocurrency market.'
+      label: "Fiat On-Ramps and Off-Ramps",
+      desc: "The platform facilitates seamless conversion between cryptocurrencies and fiat currencies, making it accessible to a broader audience and simplifying the process of entering and exiting the cryptocurrency market.",
     },
     {
       img: CableImg,
-      label: 'Real-Time Market Analysis',
-      desc: 'Employing advanced machine learning algorithms, Washing AI provides users with real-time insights into market trends and identifies potential profitable trading opportunities. This data-driven approach empowers users to make informed trading decisions.'
+      label: "Real-Time Market Analysis",
+      desc: "Employing advanced machine learning algorithms, Washing AI provides users with real-time insights into market trends and identifies potential profitable trading opportunities. This data-driven approach empowers users to make informed trading decisions.",
     },
     {
       img: CableImg,
-      label: 'High-Frequency Trading',
-      desc: 'The platform offers a sniper bot capable of executing trades with minimal latency. This feature is essential for traders seeking to capitalize on short-term price fluctuations and gain a competitive edge.'
+      label: "High-Frequency Trading",
+      desc: "The platform offers a sniper bot capable of executing trades with minimal latency. This feature is essential for traders seeking to capitalize on short-term price fluctuations and gain a competitive edge.",
     },
-
-  ]
+  ];
 
   return (
     <section
@@ -49,7 +48,7 @@ export const Support = () => {
       <div className="m-0 lg:m-10">
         {/* First Section */}
         <motion.div
-          className="flex flex-col gap-y-12 md:gap-y-20 items-center justify-center p-4 md:p-20"
+          className="flex flex-col gap-y-12 md:gap-y-20 items-center justify-center p-4"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.5 }}
@@ -92,71 +91,32 @@ export const Support = () => {
                 <h5 className="font-semibold text-lg md:text-xl lg:text-2xl">
                   {data.label}
                 </h5>
-                <p className="text-lg md:text-lg lg:text-xl">
-                  {data.desc}
-                </p>
+                <p className="text-lg md:text-lg lg:text-xl">{data.desc}</p>
               </div>
             </motion.div>
           ))}
         </div>
 
-        {/* Video Section */}
-        <motion.div
-          whileInView="visible"
-          viewport={{ once: false, amount: 0.5 }}
-          className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-20 p-4 md:p-20"
-          initial="hidden"
-          variants={fadeInUp}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        >
-          <div className="w-full md:w-1/2">
-            <Image src={DummyVideo} alt="Video" />
-          </div>
-          <div className="w-full md:w-1/2 flex flex-col gap-8">
-            <h4 className="font-bold text-3xl md:text-4xl lg:text-5xl">
-              Unveil{" "}
-              <span className="bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent">
-                the Secrets of the{" "}
-              </span>
-              WhatssBot
-            </h4>
-            <p className="text-lg md:text-xl lg:text-2xl">
-              A realm where advanced technology meets dystopian reality. Our
-              website is your gateway to a universe of neon lights, gritty
-              streets, and cybernetic enhancements.
-            </p>
-            <div className="flex flex-col md:flex-row gap-4 md:gap-8">
-              <Button onClick={() => alert("read more")} label="Read More" />
-              <Button
-                onClick={() => alert("read more")}
-                label="Learn More"
-                variant="ghost"
-              />
-            </div>
-          </div>
-        </motion.div>
-
         {/* FAQ Section */}
         <motion.div
           whileInView="visible"
           viewport={{ once: false, amount: 0.3 }}
-          className="flex flex-col gap-y-12 md:gap-y-20 items-center justify-center p-4 md:p-20 mt-16"
+          className="flex flex-col gap-y-12 md:gap-y-20 items-center justify-center p-4 mt-16"
           initial="hidden"
           variants={fadeInUp}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl text-center">
-            Frequently Asked <br />
             <span className="bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent">
-              Questions
+              FAQ
             </span>
           </h1>
-          <p className="w-full md:w-2/3 lg:w-1/2 text-lg md:text-xl lg:text-2xl text-center">
+          {/* <p className="w-full md:w-2/3 lg:w-1/2 text-lg md:text-xl lg:text-2xl text-center">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi
             neque alias praesentium ea ratione nihil illum debitis culpa,
             laboriosam a corrupti. Pariatur dicta cum possimus vero quia
             consequuntur labore magnam.
-          </p>
+          </p> */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             {[1, 2, 3, 4].map((num) => (
               <motion.div

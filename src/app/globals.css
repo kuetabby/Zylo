@@ -7,3 +7,19 @@
     @apply box-border;
   }
 }
+
+html,
+body {
+  /* overflow-x: hidden; */
+  scroll-behavior: smooth;
+}
+
+body {
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}

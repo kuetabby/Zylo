@@ -15,10 +15,9 @@ const myFont = localFont({
   display: "swap",
 });
 
-const app_title = "Whatsbot AI";
-const app_name = "Whatsbot AI";
-const description =
-  "";
+const app_title = "Washing AI";
+const app_name = "Washing AI";
+const description = "";
 
 export const metadata: Metadata = {
   title: app_title,
