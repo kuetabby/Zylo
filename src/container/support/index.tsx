@@ -91,11 +91,33 @@ export const Support = () => {
           </p>
 
           {/* Individual Features */}
-          <div className="flex flex-wrap justify-between gap-6">
-            {features.map((data, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+            {/* Individual Features */}
+            {[
+              {
+                img: DiscoverImg,
+                title: "Privacy-Preserving Transactions",
+                desc: "Leveraging zero-knowledge proof technology, Washing AI ensures maximum anonymity for users by obfuscating transaction details",
+              },
+              {
+                img: SearchImg,
+                title: "Fiat On-Ramps and Off-Ramps",
+                desc: "The platform facilitates seamless conversion between cryptocurrencies and fiat currencies, making it accessible to a broader audience and simplifying the process of entering and exiting the cryptocurrency market",
+              },
+              {
+                img: CableImg,
+                title: "Real-Time Market Analysis",
+                desc: "Employing advanced machine learning algorithms, Washing AI provides users with real-time insights into market trends and identifies potential profitable trading opportunities",
+              },
+              {
+                img: CableImg,
+                title: "High-Frequency Trading",
+                desc: "The platform offers a sniper bot capable of executing trades with minimal latency. This feature is essential for traders seeking to capitalize on short-term price fluctuations and gain a competitive edge.",
+              },
+            ].map((item, index) => (
               <motion.div
                 key={index}
-                className="flex w-full sm:w-[30%] gap-4"
+                className="flex items-start gap-4"
                 whileInView="visible"
                 viewport={{ once: false, amount: 0.5 }}
                 initial="hidden"
@@ -103,26 +125,22 @@ export const Support = () => {
                 transition={{
                   duration: 0.8,
                   ease: "easeOut",
-                  delay: index * 0.2,
                 }}
               >
-                <div className="col w-[200px] h-[200px] p-4 border rounded-lg border-[#1F8BF0]">
-                  <Image
-                    src={data.img}
-                    alt={`Feature ${index + 1}`}
-                    className="w-full h-full object-contain"  // Pastikan gambar tidak terpotong
-                  />
-                </div>
-                <div className="flex flex-col">
-                  <h5 className="font-semibold text-md md:text-lg lg:text-xl mb-3">
-                    {data.label}
+                <Image
+                  src={item.img}
+                  alt={`Feature ${index + 1}`}
+                  className="w-20 h-auto p-4 border rounded-lg border-[#1F8BF0]"
+                />
+                <div className="flex flex-col gap-3">
+                  <h5 className="font-semibold text-xl md:text-2xl lg:text-3xl">
+                    {item.title}
                   </h5>
-                  <p className="text-sm md:text-md">{data.desc}</p>
+                  <p className="text-sm lg:text-lg">{item.desc}</p>
                 </div>
               </motion.div>
             ))}
           </div>
-
         </motion.div>
 
         {/* FAQ Section */}
@@ -176,6 +194,6 @@ export const Support = () => {
           </div>
         </motion.div>
       </div>
-    </section>
+    </section >
   );
 };
