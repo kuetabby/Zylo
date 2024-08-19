@@ -13,6 +13,30 @@ export const Support = () => {
     visible: { opacity: 1, y: 0 },
   };
 
+  const features = [
+    {
+      img: CableImg,
+      label: 'Privacy-Preserving Transactions',
+      desc: 'Leveraging zero-knowledge proof technology, Washing AI ensures maximum anonymity for users by obfuscating transaction details. This is crucial for safeguarding user privacy and security in the cryptocurrency space.'
+    },
+    {
+      img: CableImg,
+      label: 'Fiat On-Ramps and Off-Ramps',
+      desc: 'The platform facilitates seamless conversion between cryptocurrencies and fiat currencies, making it accessible to a broader audience and simplifying the process of entering and exiting the cryptocurrency market.'
+    },
+    {
+      img: CableImg,
+      label: 'Real-Time Market Analysis',
+      desc: 'Employing advanced machine learning algorithms, Washing AI provides users with real-time insights into market trends and identifies potential profitable trading opportunities. This data-driven approach empowers users to make informed trading decisions.'
+    },
+    {
+      img: CableImg,
+      label: 'High-Frequency Trading',
+      desc: 'The platform offers a sniper bot capable of executing trades with minimal latency. This feature is essential for traders seeking to capitalize on short-term price fluctuations and gain a competitive edge.'
+    },
+
+  ]
+
   return (
     <section
       id="support"
@@ -43,38 +67,38 @@ export const Support = () => {
             convenient and user-friendly interface for interacting with the
             platform.
           </p>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-10">
-            {/* Individual Features */}
-            {[DiscoverImg, SearchImg, CableImg].map((img, index) => (
-              <motion.div
-                key={index}
-                className="flex w-full gap-4"
-                whileInView="visible"
-                viewport={{ once: false, amount: 0.5 }}
-                initial="hidden"
-                variants={fadeInUp}
-                transition={{
-                  duration: 0.8,
-                  ease: "easeOut",
-                  delay: index * 0.2,
-                }}
-              >
-                <div className="flex w-48 lg:w-44 h-16 p-4 border rounded-lg border-[#1F8BF0]">
-                  <Image src={img} alt={`Feature ${index + 1}`} />
-                </div>
-                <div className="flex flex-col gap-3">
-                  <h5 className="font-semibold text-xl md:text-2xl lg:text-3xl">
-                    Discover the Future
-                  </h5>
-                  <p className="text-lg md:text-xl lg:text-2xl">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptates odit earum dolore quidem hic.
-                  </p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
         </motion.div>
+
+        <div className="flex flex-wrap flex-col md:flex-row items-center justify-center gap-8 md:gap-10 p-8">
+          {/* Individual Features */}
+          {features.map((data, index) => (
+            <motion.div
+              key={index}
+              className="flex w-full gap-4"
+              whileInView="visible"
+              viewport={{ once: false, amount: 0.5 }}
+              initial="hidden"
+              variants={fadeInUp}
+              transition={{
+                duration: 0.8,
+                ease: "easeOut",
+                delay: index * 0.2,
+              }}
+            >
+              <div className="flex w-48 lg:w-44 h-16 p-4 border rounded-lg border-[#1F8BF0]">
+                <Image src={data.img} alt={`Feature ${index + 1}`} />
+              </div>
+              <div className="flex flex-col gap-3">
+                <h5 className="font-semibold text-lg md:text-xl lg:text-2xl">
+                  {data.label}
+                </h5>
+                <p className="text-lg md:text-lg lg:text-xl">
+                  {data.desc}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
 
         {/* Video Section */}
         <motion.div
