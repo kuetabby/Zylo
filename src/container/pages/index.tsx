@@ -6,6 +6,8 @@ import DummyVideo from "@/assets/img/dummy-video.png";
 import "./style.css";
 // import { ArrowRightOutlined } from "@ant-design/icons";
 import { Button } from "@/components";
+import { socialsLink, findUsLink } from '@/constant/links'
+import Link from "next/link";
 
 export const Pages = () => {
   const fadeInUp = {
@@ -40,8 +42,17 @@ export const Pages = () => {
           variants={fadeInUp}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <div className="w-full md:w-1/2">
-            <Image src={DummyVideo} alt="Video" />
+          <div className="w-full lg:w-1/2 flex items-center justify-center">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full rounded-lg object-cover"
+            >
+              <source src="/video2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
           <div className="w-full md:w-1/2 flex flex-col gap-8">
             <h4 className="font-bold text-3xl md:text-4xl lg:text-5xl">
@@ -61,11 +72,11 @@ export const Pages = () => {
             </p>
             <div className="flex flex-col md:flex-row gap-4 md:gap-8">
               <Button
-                onClick={() => alert("read more")}
+                onClick={() => window.open(socialsLink.whatsapp, '_blank')}
                 label="WashingAI Bot"
               />
               <Button
-                onClick={() => alert("read more")}
+                onClick={() => window.open(socialsLink.whitepaper, '_blank')}
                 label="Documentation"
                 variant="ghost"
               />
@@ -119,12 +130,16 @@ export const Pages = () => {
             </div>
           </div>
           <div className="w-full lg:w-1/2 flex items-center justify-center">
-            <Image
-              src={DummyVideo}
-              alt="Dummy Video"
-              className="w-full h-auto max-w-full lg:max-w-screen-lg"
-              style={{ objectFit: "cover" }}
-            />
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full rounded-lg object-cover"
+            >
+              <source src="/video1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </motion.div>
 

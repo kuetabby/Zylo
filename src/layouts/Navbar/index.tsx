@@ -5,6 +5,7 @@ import Link from "next/link";
 import { MenuOutlined, CloseOutlined } from "@ant-design/icons";
 import Image from "next/image";
 import Logo from "@/assets/img/logo.png";
+import { findUsLink } from "@/constant/links";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,7 +17,7 @@ export const Navbar = () => {
       }
     >
       <div className="m-auto max-w-screen-2xl flex items-center justify-between">
-        <Image alt="Logo Img" src={Logo} />
+        <Image width={200} alt="Logo Img" src={Logo} />
         <div className="flex items-center gap-8 justify-between md:hidden">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
@@ -26,9 +27,8 @@ export const Navbar = () => {
           </button>
         </div>
         <div
-          className={`${
-            menuOpen ? "flex" : "hidden"
-          } flex-col gap-8 justify-between absolute top-full left-0 w-full bg-black bg-opacity-50 p-8 md:flex md:flex-row md:static md:w-auto md:bg-transparent`}
+          className={`${menuOpen ? "flex" : "hidden"
+            } flex-col gap-8 justify-between absolute top-full left-0 w-full bg-black bg-opacity-50 p-8 md:flex md:flex-row md:static md:w-auto md:bg-transparent`}
         >
           <Link
             href={"#home"}
@@ -68,7 +68,7 @@ export const Navbar = () => {
         </div>
         <div className="hidden md:block">
           <Button
-            onClick={() => alert("Clicked")}
+            onClick={() => window.open(findUsLink.uniswap, '_blank')}
             label="$WASH"
             variant="primary"
           />

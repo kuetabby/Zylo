@@ -1,6 +1,6 @@
 import { TwitterOutlined, LinkedinOutlined } from "@ant-design/icons";
 import Link from "next/link";
-
+import { socialsLink, findUsLink } from '@/constant/links'
 export const Footer = () => {
   return (
     <footer className="p-8 m-auto text-white max-w-screen-2xl">
@@ -66,7 +66,7 @@ export const Footer = () => {
           <div className="font-bold text-xl !text-left mb-2">Contact Us</div>
           <div className="w-full text-right my-2">
             <Link
-              href={"#press"}
+              href={socialsLink.email}
               className="no-underline hover:underline text-sm"
             >
               Email : @example.com
@@ -79,18 +79,18 @@ export const Footer = () => {
           <h5>&copy; WashingAI 2024 All rights reserved.</h5>
         </div>
         <div className="flex flex-wrap justify-center md:justify-start gap-4 text-sm">
-          <Link href={"#terms"} className="no-underline hover:underline">
+          <Link href={findUsLink.etherscan} className="no-underline hover:underline">
             Contract
           </Link>
-          <Link href={"#privacy"} className="no-underline hover:underline">
+          <Link href={socialsLink.whitepaper} className="no-underline hover:underline">
             Documentation
           </Link>
-          <Link href={"#cookies"} className="no-underline hover:underline">
+          <Link href={findUsLink.dextools} className="no-underline hover:underline">
             Chart
           </Link>
         </div>
         <div className="flex gap-4">
-          <Link href={"#telegram"} className="no-underline">
+          <Link href={socialsLink.telegram} className="no-underline">
             <div className="flex h-8 w-8 items-center justify-center rounded-full border border-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +106,7 @@ export const Footer = () => {
               </svg>
             </div>
           </Link>
-          <Link href={"#twitter"} className="no-underline">
+          <Link href={socialsLink.twitter} className="no-underline">
             <div className="flex h-8 w-8 items-center justify-center rounded-full border border-white">
               <TwitterOutlined />
             </div>
