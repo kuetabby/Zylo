@@ -17,7 +17,8 @@ const myFont = localFont({
 
 const app_title = "Washing AI";
 const app_name = "Washing AI";
-const description = "";
+const description =
+  "A revolutionary platform designed to meet the evolving needs of cryptocurrency users, with a focus on privacy and accessibility";
 
 export const metadata: Metadata = {
   title: app_title,

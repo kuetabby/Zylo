@@ -170,8 +170,7 @@ export const Hero = () => {
               </h4> */}
               <p className="text-sm sm:text-base md:text-lg lg:text-xl">
                 a revolutionary platform designed to meet the evolving needs of
-                cryptocurrency users, with a focus on privacy, accessibility,
-                and profitability.
+                cryptocurrency users, with a focus on privacy and accessibility.
               </p>
             </div>
           </div>
