@@ -56,7 +56,7 @@ export const Support = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl text-center">
-            WashingAI:{" "}
+            {/* WashingAI:{" "} */}
             <span className="bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent">
               A Deep Dive
             </span>

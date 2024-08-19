@@ -37,7 +37,7 @@ export const Hero = () => {
       >
         <Image src={HeroImage} alt="Hero Image" className="-z-10" />
         <h1 className="absolute top-12 font-bold text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[128px] text-center">
-          WHATSAPP BOT
+          WASHING AI
         </h1>
       </motion.div>
 
@@ -104,21 +104,22 @@ export const Hero = () => {
       </div>
 
       <div className="hidden lg:block relative">
-        <motion.div
+        {/* <motion.div
           className="flex items-start gap-y-4 flex-col absolute w-[424px] left-0 bottom-72"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.5 }}
           variants={fadeInUp}
         >
-          <h4 className="font-semibold text-[35px] my-4">Stories & Lore</h4>
+          <h4 className="font-semibold text-[35px] my-4">The Idea</h4>
           <p className="font-medium text-[18px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat in
-            aperiam similique id, odio optio ab blanditiis eligendi modi odit
-            nostrum voluptatem aspernatur sit corporis porro ratione iste
-            perferendis expedita.
+            a revolutionary platform designed to meet the evolving needs of
+            cryptocurrency users, with a focus on privacy, accessibility, and
+            profitability. In an era where digital privacy is paramount, Washing
+            AI leverages cutting-edge technologies like zero-knowledge proofs to
+            ensure that user transactions remain confidential and secure.
           </p>
-        </motion.div>
+        </motion.div> */}
 
         <motion.div
           className="flex items-end gap-y-4 flex-col absolute w-[424px] right-0 bottom-52"
@@ -131,10 +132,9 @@ export const Hero = () => {
             BUILDING NEW PARADIGM
           </h4>
           <p className="font-medium text-[18px] text-right">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat in
-            aperiam similique id, odio optio ab blanditiis eligendi modi odit
-            nostrum voluptatem aspernatur sit corporis porro ratione iste
-            perferendis expedita.
+            By combining cutting-edge technology with a user-centric approach,
+            Washing AI empowers individuals to take control of their financial
+            future while safeguarding their sensitive information.
           </p>
           <div>
             <Button onClick={() => alert("Read More")} label="Read More" />
@@ -143,29 +143,30 @@ export const Hero = () => {
       </div>
 
       <motion.div
-        className="relative py-12"
+        className="w-full lg:w-3/4 xl:w-1/2 2xl:w-2/5 relative py-12"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.5 }}
         variants={fadeIn}
       >
         <div className="lg:absolute lg:-bottom-10 flex flex-col lg:flex-row items-center justify-between gap-10">
-          <div className="flex flex-col lg:flex-row gap-4 border border-[#1F8BF0] rounded-2xl bg-transparent backdrop-blur-md p-8">
-            <Image src={Cubes} alt="Cubes Img" width={1000} />
-            <div>
-              <h4 className="font-bold bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent text-xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-[58px]">
+          <div className="w-autos flex flex-col lg:flex-row gap-4 border border-[#1F8BF0] rounded-2xl bg-transparent backdrop-blur-md p-8">
+            <Image src={Cubes} alt="Cubes Img" className="m-auto" />
+            <div className="w-auto">
+              {/* <h4 className="font-bold bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent text-xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-[58px]">
                 76,286K+
-              </h4>
-              <h4 className="font-semibold text-lg sm:text-xl md:text-2xl lg:text-[28px]">
+              </h4> */}
+              {/* <h4 className="font-semibold text-lg sm:text-xl md:text-2xl lg:text-[28px]">
                 Lorem Ipsum dolorsin.
-              </h4>
+              </h4> */}
               <p className="text-sm sm:text-base md:text-lg lg:text-xl">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
-                consectetur labore minus temporibus facere dolores.
+                a revolutionary platform designed to meet the evolving needs of
+                cryptocurrency users, with a focus on privacy, accessibility,
+                and profitability.
               </p>
             </div>
           </div>
-          <div className="">
+          {/* <div className="">
             <h4 className="font-normal text-[36px]">
               ART AND <span className="font-bold">DESIGN</span>
             </h4>
@@ -175,13 +176,13 @@ export const Hero = () => {
               doloribus odio, quae harum ut rem rerum dolor accusantium! Totam
               similique architecto ipsam tempora!
             </p>
-          </div>
-          <div className="border border-[#1F8BF0] rounded-2xl bg-transparent backdrop-blur p-8">
+          </div> */}
+          {/* <div className="border border-[#1F8BF0] rounded-2xl bg-transparent backdrop-blur p-8">
             <h4 className="font-bold bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent text-[58px]">
               17+
             </h4>
             <h4 className="font-semibold text-[28px]">Years of Experiences</h4>
-          </div>
+          </div> */}
         </div>
       </motion.div>
     </section>

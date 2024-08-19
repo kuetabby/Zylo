@@ -1,6 +1,6 @@
 import { TwitterOutlined, LinkedinOutlined } from "@ant-design/icons";
 import Link from "next/link";
-import { socialsLink, findUsLink } from '@/constant/links'
+import { socialsLink, findUsLink } from "@/constant/links";
 export const Footer = () => {
   return (
     <footer className="p-8 m-auto text-white max-w-screen-2xl">
@@ -69,7 +69,7 @@ export const Footer = () => {
               href={socialsLink.email}
               className="no-underline hover:underline text-sm"
             >
-              Email : @example.com
+              support@washingai.io
             </Link>
           </div>
         </div>
@@ -79,13 +79,22 @@ export const Footer = () => {
           <h5>&copy; WashingAI 2024 All rights reserved.</h5>
         </div>
         <div className="flex flex-wrap justify-center md:justify-start gap-4 text-sm">
-          <Link href={findUsLink.etherscan} className="no-underline hover:underline">
+          <Link
+            href={findUsLink.etherscan}
+            className="no-underline hover:underline"
+          >
             Contract
           </Link>
-          <Link href={socialsLink.whitepaper} className="no-underline hover:underline">
+          <Link
+            href={socialsLink.whitepaper}
+            className="no-underline hover:underline"
+          >
             Documentation
           </Link>
-          <Link href={findUsLink.dextools} className="no-underline hover:underline">
+          <Link
+            href={findUsLink.dextools}
+            className="no-underline hover:underline"
+          >
             Chart
           </Link>
         </div>

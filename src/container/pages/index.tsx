@@ -6,7 +6,7 @@ import DummyVideo from "@/assets/img/dummy-video.png";
 import "./style.css";
 // import { ArrowRightOutlined } from "@ant-design/icons";
 import { Button } from "@/components";
-import { socialsLink, findUsLink } from '@/constant/links'
+import { socialsLink, findUsLink } from "@/constant/links";
 import Link from "next/link";
 
 export const Pages = () => {
@@ -21,7 +21,7 @@ export const Pages = () => {
       className="mt-8 bg-no-repeat bg-center p-8"
       style={{
         backgroundImage: `url("/background-pages.png")`,
-        height: "auto",
+        height: "100%",
       }}
       initial="hidden"
       whileInView="visible"
@@ -37,7 +37,7 @@ export const Pages = () => {
         <motion.div
           whileInView="visible"
           viewport={{ once: false, amount: 0.5 }}
-          className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-20 p-4"
+          className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-20 p-4 mt-20 mb-60"
           initial="hidden"
           variants={fadeInUp}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -72,11 +72,11 @@ export const Pages = () => {
             </p>
             <div className="flex flex-col md:flex-row gap-4 md:gap-8">
               <Button
-                onClick={() => window.open(socialsLink.whatsapp, '_blank')}
+                onClick={() => window.open(socialsLink.whatsapp, "_blank")}
                 label="WashingAI Bot"
               />
               <Button
-                onClick={() => window.open(socialsLink.whitepaper, '_blank')}
+                onClick={() => window.open(socialsLink.whitepaper, "_blank")}
                 label="Documentation"
                 variant="ghost"
               />
@@ -85,7 +85,7 @@ export const Pages = () => {
         </motion.div>
 
         <motion.div
-          className="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-40 mt-20"
+          className="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-40 my-60"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.1 }}
