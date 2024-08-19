@@ -61,7 +61,7 @@ export const Support = () => {
 
   return (
     <section
-      id="support"
+      id="faq"
       className="bg-no-repeat bg-center p-8"
       style={{
         backgroundImage: `url("/background-support.png")`,

@@ -17,7 +17,7 @@ export const Pages = () => {
 
   return (
     <motion.section
-      id="pages"
+      id="about"
       className="mt-8 bg-no-repeat bg-center p-8"
       style={{
         backgroundImage: `url("/background-pages.png")`,

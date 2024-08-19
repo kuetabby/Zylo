@@ -39,14 +39,14 @@ export const Navbar = () => {
             Home
           </Link>
           <Link
-            href={"#pages"}
+            href={"#about"}
             onClick={() => setMenuOpen(!menuOpen)}
             className="text-white no-underline text-[16px] font-medium"
           >
             About
           </Link>
           <Link
-            href={"#support"}
+            href={"#faq"}
             onClick={() => setMenuOpen(!menuOpen)}
             className="text-white no-underline text-[16px] font-medium"
           >
