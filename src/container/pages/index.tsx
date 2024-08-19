@@ -42,6 +42,9 @@ export const Pages = () => {
           variants={fadeInUp}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
+          <h4 className="block lg:hidden font-bold text-3xl md:text-4xl lg:text-5xl">
+            About WashingAI
+          </h4>
           <div className="w-full lg:w-1/2 flex items-center justify-center">
             <video
               autoPlay
@@ -55,13 +58,8 @@ export const Pages = () => {
             </video>
           </div>
           <div className="w-full lg:w-1/2 flex flex-col gap-8">
-            <h4 className="font-bold text-3xl md:text-4xl lg:text-5xl">
+            <h4 className="hidden lg:block font-bold text-3xl md:text-4xl lg:text-5xl">
               About WashingAI
-              {/* Unveil{" "}
-              <span className="bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent">
-                the Secrets of the{" "}
-              </span>
-              WhatssBot */}
             </h4>
             <p className="text-lg md:text-xl lg:text-2xl">
               Washing AI is a decentralized application (dApp) built on the
@@ -106,8 +104,14 @@ export const Pages = () => {
           }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
+          <h4 className="block lg:hidden font-bold text-[32px] sm:text-[48px] lg:text-[58px]">
+            WashingAI{" "}
+            <span className="bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent">
+              Tokenomics
+            </span>
+          </h4>
           <div className="w-full lg:w-1/2 order-2 lg:order-1">
-            <h4 className="font-bold text-[32px] sm:text-[48px] lg:text-[58px]">
+            <h4 className="hidden lg:block font-bold text-[32px] sm:text-[48px] lg:text-[58px]">
               WashingAI{" "}
               <span className="bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent">
                 Tokenomics
