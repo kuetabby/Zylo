@@ -17,7 +17,7 @@ export const Support = () => {
     {
       img: CableImg,
       label: "Privacy-Preserving Transactions",
-      desc: "Leveraging zero-knowledge proof technology, Washing AI ensures maximum anonymity for users by obfuscating transaction details. This is crucial for safeguarding user privacy and security in the cryptocurrency space.",
+      desc: "Leveraging zero-knowledge proof technology, Washing AI ensures maximum anonymity for users by obfuscating transaction details.",
     },
     {
       img: CableImg,
@@ -27,12 +27,12 @@ export const Support = () => {
     {
       img: CableImg,
       label: "Real-Time Market Analysis",
-      desc: "Employing advanced machine learning algorithms, Washing AI provides users with real-time insights into market trends and identifies potential profitable trading opportunities. This data-driven approach empowers users to make informed trading decisions.",
+      desc: "Employing advanced machine learning algorithms, Washing AI provides users with real-time insights into market trends and identifies potential profitable trading opportunities.",
     },
     {
       img: CableImg,
       label: "High-Frequency Trading",
-      desc: "The platform offers a sniper bot capable of executing trades with minimal latency. This feature is essential for traders seeking to capitalize on short-term price fluctuations and gain a competitive edge.",
+      desc: "The platform offers a sniper bot capable of executing trades with minimal latency.",
     },
   ];
 
@@ -66,36 +66,36 @@ export const Support = () => {
             convenient and user-friendly interface for interacting with the
             platform.
           </p>
-        </motion.div>
 
-        <div className="flex flex-wrap flex-col md:flex-row items-center justify-center gap-8 md:gap-10 p-8">
           {/* Individual Features */}
-          {features.map((data, index) => (
-            <motion.div
-              key={index}
-              className="flex w-full gap-4"
-              whileInView="visible"
-              viewport={{ once: false, amount: 0.5 }}
-              initial="hidden"
-              variants={fadeInUp}
-              transition={{
-                duration: 0.8,
-                ease: "easeOut",
-                delay: index * 0.2,
-              }}
-            >
-              <div className="flex w-48 lg:w-44 h-16 p-4 border rounded-lg border-[#1F8BF0]">
-                <Image src={data.img} alt={`Feature ${index + 1}`} />
-              </div>
-              <div className="flex flex-col gap-3">
-                <h5 className="font-semibold text-lg md:text-xl lg:text-2xl">
-                  {data.label}
-                </h5>
-                <p className="text-lg md:text-lg lg:text-xl">{data.desc}</p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+          <div className="flex flex-wrap justify-between gap-6">
+            {features.map((data, index) => (
+              <motion.div
+                key={index}
+                className="flex w-full sm:w-[30%] gap-4"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.5 }}
+                initial="hidden"
+                variants={fadeInUp}
+                transition={{
+                  duration: 0.8,
+                  ease: "easeOut",
+                  delay: index * 0.2,
+                }}
+              >
+                <div className="flex w-48 h-16 p-4 border rounded-lg border-[#1F8BF0]">
+                  <Image src={data.img} alt={`Feature ${index + 1}`} />
+                </div>
+                <div className="flex flex-col gap-3">
+                  <h5 className="font-semibold text-md md:text-lg lg:text-xl">
+                    {data.label}
+                  </h5>
+                  <p className="text-sm md:text-md">{data.desc}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
 
         {/* FAQ Section */}
         <motion.div
