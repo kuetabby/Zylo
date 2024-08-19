@@ -9,6 +9,8 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css"; // Import Swiper styles
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { socialsLink } from "@/constant/links";
+import Link from "next/link";
 
 export const Hero = () => {
   const fadeInUp = {
@@ -57,7 +59,7 @@ export const Hero = () => {
           className="mySwiper"
         >
           {/* Slide 1 */}
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <motion.div
               className="flex flex-col items-center gap-y-4 w-full max-w-[424px] mx-auto mb-12"
               initial="hidden"
@@ -75,7 +77,7 @@ export const Hero = () => {
                 <Button onClick={() => alert("Read More")} label="Read More" />
               </div>
             </motion.div>
-          </SwiperSlide>
+          </SwiperSlide> */}
 
           {/* Slide 2 */}
           {/* <SwiperSlide>
@@ -90,7 +92,10 @@ export const Hero = () => {
                 A REVOLUTIONARY PLATFORM
               </h4>
               <p className="font-medium text-sm sm:text-base md:text-lg lg:text-[18px] text-center">
-                a revolutionary platform designed to meet the evolving needs of cryptocurrency users, with a focus on privacy, accessibility, and profitability.
+                By combining cutting-edge technology with a user-centric
+                approach, Washing AI empowers individuals to take control of
+                their financial future while safeguarding their sensitive
+                information.
               </p>
               <div className="mt-4">
                 <Button onClick={() => alert("Read More")} label="Read More" />
@@ -134,7 +139,14 @@ export const Hero = () => {
             future while safeguarding their sensitive information.
           </p>
           <div>
-            <Button onClick={() => alert("Read More")} label="Read More" />
+            <Link
+              rel="noopener noreferrer"
+              target="_blank"
+              href={socialsLink.whitepaper}
+            // className="no-underline hover:underline"
+            >
+              <Button onClick={() => alert("Read More")} label="Read More" />
+            </Link>
           </div>
         </motion.div>
       </div>
@@ -158,8 +170,7 @@ export const Hero = () => {
               </h4> */}
               <p className="text-sm sm:text-base md:text-lg lg:text-xl">
                 a revolutionary platform designed to meet the evolving needs of
-                cryptocurrency users, with a focus on privacy, accessibility,
-                and profitability.
+                cryptocurrency users, with a focus on privacy and accessibility.
               </p>
             </div>
           </div>

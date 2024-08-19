@@ -75,10 +75,10 @@ export const Footer = () => {
         </div>
       </div>
       <div className="flex flex-col md:flex-row md:justify-between items-center gap-8">
-        <div className="text-sm">
+        <div className="order-3 md:order-1 text-sm">
           <h5>&copy; WashingAI 2024 All rights reserved.</h5>
         </div>
-        <div className="flex flex-wrap justify-center md:justify-start gap-4 text-sm">
+        <div className="order-2 md:order-2 flex flex-wrap justify-center md:justify-start gap-4 text-sm">
           <Link
             href={findUsLink.etherscan}
             className="no-underline hover:underline"
@@ -86,6 +86,8 @@ export const Footer = () => {
             Contract
           </Link>
           <Link
+            rel="noopener noreferrer"
+            target="_blank"
             href={socialsLink.whitepaper}
             className="no-underline hover:underline"
           >
@@ -98,7 +100,7 @@ export const Footer = () => {
             Chart
           </Link>
         </div>
-        <div className="flex gap-4">
+        <div className="order-1 md:order-3 flex gap-4">
           <Link href={socialsLink.telegram} className="no-underline">
             <div className="flex h-8 w-8 items-center justify-center rounded-full border border-white">
               <svg

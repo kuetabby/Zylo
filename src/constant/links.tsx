@@ -2,20 +2,20 @@ export const contractAddress = "-";
 export const pairAddress = "-";
 
 export const socialsLink = {
-    whitepaper: "",
-    twitter: "https://x.com/Washing_Ai",
-    telegram: "https://t.me/washing_ai",
-    medium: "https://medium.com",
-    email: "mailto:support@washingai.io",
-    bot: "https://t.me/",
-    whatsapp: 'https://wa.me/'
+  whitepaper: "/",
+  twitter: "https://x.com/Washing_Ai",
+  telegram: "https://t.me/washing_ai",
+  medium: "https://medium.com",
+  email: "mailto:support@washingai.io",
+  bot: "https://t.me/",
+  whatsapp: "https://wa.me/",
 };
 
 export const findUsLink = {
-    dextools: `http://dextools.io/app/ether/pair-explorer/${pairAddress}`,
-    dexscreener: `https://dexscreener.com/ethereum/${contractAddress}`,
-    solidproof: "https://app.solidproof.io/projects/",
-    etherscan: `https://etherscan.io/token/${contractAddress}`,
-    uniswap: `https://app.uniswap.org/tokens/ethereum/${contractAddress}`,
-    coingecko: `https://www.coingecko.com/en/coins/`,
+  dextools: `http://dextools.io/app/ether/pair-explorer/${pairAddress}`,
+  dexscreener: `https://dexscreener.com/ethereum/${contractAddress}`,
+  solidproof: "https://app.solidproof.io/projects/",
+  etherscan: `https://etherscan.io/token/${contractAddress}`,
+  uniswap: `https://app.uniswap.org/tokens/ethereum/${contractAddress}`,
+  coingecko: `https://www.coingecko.com/en/coins/`,
 };

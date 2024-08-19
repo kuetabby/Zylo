@@ -39,29 +39,29 @@ export const Support = () => {
   const faq = [
     {
       id: 1,
-      label: 'How does Washing AI protect my privacy?',
-      desc: 'Washing AI uses zero-knowledge proof technology to ensure your transactions are private and secure.This technology obfuscates transaction details, providing maximum anonymity and safeguarding your sensitive information.'
+      label: "How does Washing AI protect my privacy?",
+      desc: "Washing AI uses zero-knowledge proof technology to ensure your transactions are private and secure.This technology obfuscates transaction details, providing maximum anonymity and safeguarding your sensitive information.",
     },
     {
       id: 2,
-      label: 'How do I use the WhatsApp bot?',
-      desc: 'The WhatsApp bot provides a convenient and familiar way to interact with Washing AI. You can use it to check your balance, initiate transactions, receive market updates, and more—all from within the WhatsApp interface.'
+      label: "How do I use the WhatsApp bot?",
+      desc: "The WhatsApp bot provides a convenient and familiar way to interact with Washing AI. You can use it to check your balance, initiate transactions, receive market updates, and more—all from within the WhatsApp interface.",
     },
     {
       id: 3,
-      label: 'Is Washing AI suitable for beginners?      ',
-      desc: 'Yes, Washing AI is designed to be user-friendly and accessible to both beginners and experienced traders.'
+      label: "Is Washing AI suitable for beginners?      ",
+      desc: "Yes, Washing AI is designed to be user-friendly and accessible to both beginners and experienced traders.",
     },
     {
       id: 4,
-      label: 'How secure is Washing AI?',
-      desc: 'Washing AI prioritizes security by implementing state-of-the-art encryption and privacy-preserving technologies. Your data and assets are protected with the highest standards.'
-    }
-  ]
+      label: "How secure is Washing AI?",
+      desc: "Washing AI prioritizes security by implementing state-of-the-art encryption and privacy-preserving technologies. Your data and assets are protected with the highest standards.",
+    },
+  ];
 
   return (
     <section
-      id="support"
+      id="faq"
       className="bg-no-repeat bg-center p-8"
       style={{
         backgroundImage: `url("/background-support.png")`,
@@ -100,17 +100,17 @@ export const Support = () => {
                 desc: "Leveraging zero-knowledge proof technology, Washing AI ensures maximum anonymity for users by obfuscating transaction details",
               },
               {
-                img: SearchImg,
+                img: DiscoverImg,
                 title: "Fiat On-Ramps and Off-Ramps",
                 desc: "The platform facilitates seamless conversion between cryptocurrencies and fiat currencies, making it accessible to a broader audience and simplifying the process of entering and exiting the cryptocurrency market",
               },
               {
-                img: CableImg,
+                img: DiscoverImg,
                 title: "Real-Time Market Analysis",
                 desc: "Employing advanced machine learning algorithms, Washing AI provides users with real-time insights into market trends and identifies potential profitable trading opportunities",
               },
               {
-                img: CableImg,
+                img: DiscoverImg,
                 title: "High-Frequency Trading",
                 desc: "The platform offers a sniper bot capable of executing trades with minimal latency. This feature is essential for traders seeking to capitalize on short-term price fluctuations and gain a competitive edge.",
               },
@@ -185,15 +185,13 @@ export const Support = () => {
                   <h5 className="font-semibold text-xl md:text-2xl lg:text-3xl">
                     {data.label}
                   </h5>
-                  <p className="text-lg md:text-xl lg:text-2xl">
-                    {data.desc}
-                  </p>
+                  <p className="text-lg md:text-xl lg:text-2xl">{data.desc}</p>
                 </div>
               </motion.div>
             ))}
           </div>
         </motion.div>
       </div>
-    </section >
+    </section>
   );
 };

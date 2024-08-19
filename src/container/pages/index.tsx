@@ -17,7 +17,7 @@ export const Pages = () => {
 
   return (
     <motion.section
-      id="pages"
+      id="about"
       className="mt-8 bg-no-repeat bg-center p-8"
       style={{
         backgroundImage: `url("/background-pages.png")`,
@@ -37,11 +37,14 @@ export const Pages = () => {
         <motion.div
           whileInView="visible"
           viewport={{ once: false, amount: 0.5 }}
-          className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-20 p-4 mt-20 mb-60"
+          className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-20 p-4 mt-20 mb-60"
           initial="hidden"
           variants={fadeInUp}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
+          <h4 className="block lg:hidden font-bold text-3xl md:text-4xl lg:text-5xl">
+            About WashingAI
+          </h4>
           <div className="w-full lg:w-1/2 flex items-center justify-center">
             <video
               autoPlay
@@ -54,14 +57,9 @@ export const Pages = () => {
               Your browser does not support the video tag.
             </video>
           </div>
-          <div className="w-full md:w-1/2 flex flex-col gap-8">
-            <h4 className="font-bold text-3xl md:text-4xl lg:text-5xl">
+          <div className="w-full lg:w-1/2 flex flex-col gap-8">
+            <h4 className="hidden lg:block font-bold text-3xl md:text-4xl lg:text-5xl">
               About WashingAI
-              {/* Unveil{" "}
-              <span className="bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent">
-                the Secrets of the{" "}
-              </span>
-              WhatssBot */}
             </h4>
             <p className="text-lg md:text-xl lg:text-2xl">
               Washing AI is a decentralized application (dApp) built on the
@@ -71,15 +69,26 @@ export const Pages = () => {
               efficiency within the cryptocurrency ecosystem.
             </p>
             <div className="flex flex-col md:flex-row gap-4 md:gap-8">
-              <Button
-                onClick={() => window.open(socialsLink.whatsapp, "_blank")}
-                label="WashingAI Bot"
-              />
-              <Button
-                onClick={() => window.open(socialsLink.whitepaper, "_blank")}
-                label="Documentation"
-                variant="ghost"
-              />
+              <Link
+                rel="noopener noreferrer"
+                target="_blank"
+                href={socialsLink.whatsapp}
+                className="no-underline hover:underline"
+              >
+                <Button
+                  // onClick={() => window.open(socialsLink.whatsapp, "_blank")}
+                  label="WashingAI Bot"
+                />
+              </Link>
+
+              <Link
+                rel="noopener noreferrer"
+                target="_blank"
+                href={socialsLink.whitepaper}
+                className="no-underline hover:underline"
+              >
+                <Button label="Documentation" variant="ghost" />
+              </Link>
             </div>
           </div>
         </motion.div>
@@ -95,8 +104,14 @@ export const Pages = () => {
           }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <div className="w-full lg:w-1/2">
-            <h4 className="font-bold text-[32px] sm:text-[48px] lg:text-[58px]">
+          <h4 className="block lg:hidden font-bold text-[32px] sm:text-[48px] lg:text-[58px]">
+            WashingAI{" "}
+            <span className="bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent">
+              Tokenomics
+            </span>
+          </h4>
+          <div className="w-full lg:w-1/2 order-2 lg:order-1">
+            <h4 className="hidden lg:block font-bold text-[32px] sm:text-[48px] lg:text-[58px]">
               WashingAI{" "}
               <span className="bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent">
                 Tokenomics
@@ -111,25 +126,25 @@ export const Pages = () => {
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-10 mt-8">
               <div>
                 <h4 className="font-bold bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent text-[32px] sm:text-[48px] lg:text-[58px]">
-                  WASH
+                  -
                 </h4>
                 <p>Name</p>
               </div>
               <div>
                 <h4 className="font-bold bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent text-[32px] sm:text-[48px] lg:text-[58px]">
-                  $WASH
+                  -
                 </h4>
                 <p>Ticker</p>
               </div>
               <div>
                 <h4 className="font-bold bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent text-[32px] sm:text-[48px] lg:text-[58px]">
-                  100M
+                  -
                 </h4>
                 <p>Total Supply</p>
               </div>
             </div>
           </div>
-          <div className="w-full lg:w-1/2 flex items-center justify-center">
+          <div className="w-full lg:w-1/2 flex items-center justify-center order-1 lg:order-2">
             <video
               autoPlay
               loop
