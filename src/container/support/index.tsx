@@ -33,16 +33,15 @@ export const Support = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl text-center">
-            Dive into the Whats{" "}
+            WashingAI:{" "}
             <span className="bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent">
-              Bot
+              A Deep Dive
             </span>
           </h1>
           <p className="w-full text-lg md:text-xl lg:text-2xl text-center">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-            neque alias praesentium ea ratione nihil illum debitis culpa,
-            laboriosam a corrupti. Pariatur dicta cum possimus vero quia
-            consequuntur labore magnam.
+            Washing AI integrates a WhatsApp bot to provide users with a
+            convenient and user-friendly interface for interacting with the
+            platform.
           </p>
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-10">
             {/* Individual Features */}

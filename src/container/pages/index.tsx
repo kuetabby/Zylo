@@ -38,35 +38,35 @@ export const Pages = () => {
         >
           <div className="w-full lg:w-1/2">
             <h4 className="font-bold text-[32px] sm:text-[48px] lg:text-[58px]">
-              iSecureAi{" "}
+              WashingAI{" "}
               <span className="bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent">
-                Tokenomics & Digital
+                Tokenomics
               </span>
             </h4>
-            <p className="mt-4 text-[16px] sm:text-[18px]">
+            {/* <p className="mt-4 text-[16px] sm:text-[18px]">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Voluptatum cupiditate ipsam recusandae atque necessitatibus
               voluptates ut impedit iure provident iste esse qui, totam corrupti
               vero, doloremque sed praesentium molestias quisquam.
-            </p>
+            </p> */}
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-10 mt-8">
               <div>
                 <h4 className="font-bold bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent text-[32px] sm:text-[48px] lg:text-[58px]">
-                  89,2K+
+                  WASH
                 </h4>
-                <p>Discover The Future</p>
+                <p>Name</p>
               </div>
               <div>
                 <h4 className="font-bold bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent text-[32px] sm:text-[48px] lg:text-[58px]">
-                  7001+
+                  $WASH
                 </h4>
-                <p>Stories & Lore</p>
+                <p>Ticker</p>
               </div>
               <div>
                 <h4 className="font-bold bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent text-[32px] sm:text-[48px] lg:text-[58px]">
-                  3,124+
+                  100M
                 </h4>
-                <p>Art and Design</p>
+                <p>Total Supply</p>
               </div>
             </div>
           </div>
@@ -150,13 +150,14 @@ export const Pages = () => {
           <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-20 w-full">
             <div className="w-full lg:w-1/2">
               <h1 className="font-bold text-[36px] sm:text-[48px] lg:text-[65px]">
-                Greetings! Dive into the Whatssbot Universe
+                About WashingAI
               </h1>
               <p className="mt-8 lg:mt-14 text-[16px] sm:text-[18px]">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Tempora necessitatibus eos optio eligendi perspiciatis ipsum,
-                doloremque quam id officiis ea, vel qui, placeat atque itaque
-                aspernatur harum temporibus voluptates cum.
+                Washing AI is a decentralized application (dApp) built on the
+                Ethereum blockchain. It harnesses the power of smart contracts
+                and artificial intelligence (AI) to provide a comprehensive
+                suite of tools aimed at enhancing user privacy and optimizing
+                trading efficiency within the cryptocurrency ecosystem.
               </p>
             </div>
             <div className="w-full lg:w-1/2">
@@ -165,7 +166,7 @@ export const Pages = () => {
                   <div className="flex gap-5 items-center">
                     <span className="w-2 h-2 p-2 bg-[#6DEEDC]"></span>
                     <h4 className="text-[14px] sm:text-[16px]">
-                      Join The Revolution
+                      Privacy-Preserving Transactions
                     </h4>
                   </div>
                   <ArrowRightOutlined />
@@ -173,7 +174,9 @@ export const Pages = () => {
                 <div className="flex flex-row items-center justify-between">
                   <div className="flex gap-5 items-center">
                     <span className="w-2 h-2 p-2 bg-[#1F8BF0]"></span>
-                    <h4 className="text-[14px] sm:text-[16px]">Chat Bot</h4>
+                    <h4 className="text-[14px] sm:text-[16px]">
+                      Fiat On-Ramps and Off-Ramps
+                    </h4>
                   </div>
                   <ArrowRightOutlined />
                 </div>
@@ -181,7 +184,7 @@ export const Pages = () => {
                   <div className="flex gap-5 items-center">
                     <span className="w-2 h-2 p-2 bg-[#6DEEDC]"></span>
                     <h4 className="text-[14px] sm:text-[16px]">
-                      Tech And Gear
+                      Real-Time Market Analysis
                     </h4>
                   </div>
                   <ArrowRightOutlined />
@@ -190,7 +193,7 @@ export const Pages = () => {
                   <div className="flex gap-5 items-center">
                     <span className="w-2 h-2 p-2 bg-[#1F8BF0]"></span>
                     <h4 className="text-[14px] sm:text-[16px]">
-                      Stories And Lore
+                      High-Frequency Trading
                     </h4>
                   </div>
                   <ArrowRightOutlined />
