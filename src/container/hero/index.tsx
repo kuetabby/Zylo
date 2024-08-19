@@ -66,19 +66,19 @@ export const Hero = () => {
               variants={fadeInUp}
             >
               <h4 className="font-semibold text-xl sm:text-2xl md:text-3xl lg:text-[35px] my-4 text-center">
-                Stories & Lore
+                BUILDING NEW PARADIGM
               </h4>
               <p className="font-medium text-sm sm:text-base md:text-lg lg:text-[18px] text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                in aperiam similique id, odio optio ab blanditiis eligendi modi
-                odit nostrum voluptatem aspernatur sit corporis porro ratione
-                iste perferendis expedita.
+                By combining cutting-edge technology with a user-centric approach, Washing AI empowers individuals to take control of their financial future while safeguarding their sensitive information.
               </p>
+              <div className="mt-4">
+                <Button onClick={() => alert("Read More")} label="Read More" />
+              </div>
             </motion.div>
           </SwiperSlide>
 
           {/* Slide 2 */}
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <motion.div
               className="flex flex-col items-center gap-y-4 w-full max-w-[424px] mx-auto mb-12"
               initial="hidden"
@@ -87,19 +87,16 @@ export const Hero = () => {
               variants={fadeInUp}
             >
               <h4 className="font-semibold text-xl sm:text-2xl md:text-3xl lg:text-[35px] my-4 text-center">
-                BUILDING NEW PARADIGM
+                A REVOLUTIONARY PLATFORM
               </h4>
               <p className="font-medium text-sm sm:text-base md:text-lg lg:text-[18px] text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                in aperiam similique id, odio optio ab blanditiis eligendi modi
-                odit nostrum voluptatem aspernatur sit corporis porro ratione
-                iste perferendis expedita.
+                a revolutionary platform designed to meet the evolving needs of cryptocurrency users, with a focus on privacy, accessibility, and profitability.
               </p>
               <div className="mt-4">
                 <Button onClick={() => alert("Read More")} label="Read More" />
               </div>
             </motion.div>
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
       </div>
 
