@@ -9,6 +9,8 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css"; // Import Swiper styles
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { socialsLink } from "@/constant/links";
+import Link from "next/link";
 
 export const Hero = () => {
   const fadeInUp = {
@@ -137,7 +139,14 @@ export const Hero = () => {
             future while safeguarding their sensitive information.
           </p>
           <div>
-            <Button onClick={() => alert("Read More")} label="Read More" />
+            <Link
+              rel="noopener noreferrer"
+              target="_blank"
+              href={socialsLink.whitepaper}
+              // className="no-underline hover:underline"
+            >
+              <Button onClick={() => alert("Read More")} label="Read More" />
+            </Link>
           </div>
         </motion.div>
       </div>

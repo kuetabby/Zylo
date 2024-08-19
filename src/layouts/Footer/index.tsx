@@ -86,6 +86,8 @@ export const Footer = () => {
             Contract
           </Link>
           <Link
+            rel="noopener noreferrer"
+            target="_blank"
             href={socialsLink.whitepaper}
             className="no-underline hover:underline"
           >

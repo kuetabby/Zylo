@@ -37,7 +37,7 @@ export const Pages = () => {
         <motion.div
           whileInView="visible"
           viewport={{ once: false, amount: 0.5 }}
-          className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-20 p-4 mt-20 mb-60"
+          className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-20 p-4 mt-20 mb-60"
           initial="hidden"
           variants={fadeInUp}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -54,7 +54,7 @@ export const Pages = () => {
               Your browser does not support the video tag.
             </video>
           </div>
-          <div className="w-full md:w-1/2 flex flex-col gap-8">
+          <div className="w-full lg:w-1/2 flex flex-col gap-8">
             <h4 className="font-bold text-3xl md:text-4xl lg:text-5xl">
               About WashingAI
               {/* Unveil{" "}
@@ -71,15 +71,26 @@ export const Pages = () => {
               efficiency within the cryptocurrency ecosystem.
             </p>
             <div className="flex flex-col md:flex-row gap-4 md:gap-8">
-              <Button
-                onClick={() => window.open(socialsLink.whatsapp, "_blank")}
-                label="WashingAI Bot"
-              />
-              <Button
-                onClick={() => window.open(socialsLink.whitepaper, "_blank")}
-                label="Documentation"
-                variant="ghost"
-              />
+              <Link
+                rel="noopener noreferrer"
+                target="_blank"
+                href={socialsLink.whatsapp}
+                className="no-underline hover:underline"
+              >
+                <Button
+                  // onClick={() => window.open(socialsLink.whatsapp, "_blank")}
+                  label="WashingAI Bot"
+                />
+              </Link>
+
+              <Link
+                rel="noopener noreferrer"
+                target="_blank"
+                href={socialsLink.whitepaper}
+                className="no-underline hover:underline"
+              >
+                <Button label="Documentation" variant="ghost" />
+              </Link>
             </div>
           </div>
         </motion.div>
@@ -95,7 +106,7 @@ export const Pages = () => {
           }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <div className="w-full lg:w-1/2">
+          <div className="w-full lg:w-1/2 order-2 lg:order-1">
             <h4 className="font-bold text-[32px] sm:text-[48px] lg:text-[58px]">
               WashingAI{" "}
               <span className="bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent">
@@ -129,7 +140,7 @@ export const Pages = () => {
               </div>
             </div>
           </div>
-          <div className="w-full lg:w-1/2 flex items-center justify-center">
+          <div className="w-full lg:w-1/2 flex items-center justify-center order-1 lg:order-2">
             <video
               autoPlay
               loop
