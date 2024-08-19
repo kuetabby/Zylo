@@ -111,19 +111,19 @@ export const Pages = () => {
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-10 mt-8">
               <div>
                 <h4 className="font-bold bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent text-[32px] sm:text-[48px] lg:text-[58px]">
-                  WASH
+                  -
                 </h4>
                 <p>Name</p>
               </div>
               <div>
                 <h4 className="font-bold bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent text-[32px] sm:text-[48px] lg:text-[58px]">
-                  $WASH
+                  -
                 </h4>
                 <p>Ticker</p>
               </div>
               <div>
                 <h4 className="font-bold bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent text-[32px] sm:text-[48px] lg:text-[58px]">
-                  100M
+                  -
                 </h4>
                 <p>Total Supply</p>
               </div>
