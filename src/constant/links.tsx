@@ -6,7 +6,7 @@ export const socialsLink = {
     twitter: "https://x.com/",
     telegram: "https://t.me/",
     medium: "https://medium.com",
-    email: "mailto:",
+    email: "mailto:support@washingai.io",
     bot: "https://t.me/",
     whatsapp: 'https://wa.me/'
 };

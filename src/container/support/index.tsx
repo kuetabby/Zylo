@@ -36,6 +36,29 @@ export const Support = () => {
     },
   ];
 
+  const faq = [
+    {
+      id: 1,
+      label: 'How does Washing AI protect my privacy?',
+      desc: 'Washing AI uses zero-knowledge proof technology to ensure your transactions are private and secure.This technology obfuscates transaction details, providing maximum anonymity and safeguarding your sensitive information.'
+    },
+    {
+      id: 2,
+      label: 'How do I use the WhatsApp bot?',
+      desc: 'The WhatsApp bot provides a convenient and familiar way to interact with Washing AI. You can use it to check your balance, initiate transactions, receive market updates, and more—all from within the WhatsApp interface.'
+    },
+    {
+      id: 3,
+      label: 'Is Washing AI suitable for beginners?      ',
+      desc: 'Yes, Washing AI is designed to be user-friendly and accessible to both beginners and experienced traders.'
+    },
+    {
+      id: 4,
+      label: 'How secure is Washing AI?',
+      desc: 'Washing AI prioritizes security by implementing state-of-the-art encryption and privacy-preserving technologies. Your data and assets are protected with the highest standards.'
+    }
+  ]
+
   return (
     <section
       id="support"
@@ -83,11 +106,15 @@ export const Support = () => {
                   delay: index * 0.2,
                 }}
               >
-                <div className="flex w-48 h-16 p-4 border rounded-lg border-[#1F8BF0]">
-                  <Image src={data.img} alt={`Feature ${index + 1}`} />
+                <div className="col w-[200px] h-[200px] p-4 border rounded-lg border-[#1F8BF0]">
+                  <Image
+                    src={data.img}
+                    alt={`Feature ${index + 1}`}
+                    className="w-full h-full object-contain"  // Pastikan gambar tidak terpotong
+                  />
                 </div>
-                <div className="flex flex-col gap-3">
-                  <h5 className="font-semibold text-md md:text-lg lg:text-xl">
+                <div className="flex flex-col">
+                  <h5 className="font-semibold text-md md:text-lg lg:text-xl mb-3">
                     {data.label}
                   </h5>
                   <p className="text-sm md:text-md">{data.desc}</p>
@@ -95,6 +122,7 @@ export const Support = () => {
               </motion.div>
             ))}
           </div>
+
         </motion.div>
 
         {/* FAQ Section */}
@@ -118,9 +146,9 @@ export const Support = () => {
             consequuntur labore magnam.
           </p> */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-            {[1, 2, 3, 4].map((num) => (
+            {faq.map((data) => (
               <motion.div
-                key={num}
+                key={data.id}
                 className="flex items-start gap-4"
                 whileInView="visible"
                 viewport={{ once: false, amount: 0.5 }}
@@ -129,19 +157,18 @@ export const Support = () => {
                 transition={{
                   duration: 0.8,
                   ease: "easeOut",
-                  delay: num * 0.2,
+                  delay: data.id * 0.2,
                 }}
               >
                 <h1 className="font-semibold text-3xl md:text-4xl lg:text-5xl bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent">
-                  {num < 10 ? `0${num}` : num}.
+                  {data.id < 10 ? `0${data.id}` : data.id}.
                 </h1>
                 <div className="flex flex-col gap-3 border-b p-4 border-[#1F8BF0]">
                   <h5 className="font-semibold text-xl md:text-2xl lg:text-3xl">
-                    Discover the Future
+                    {data.label}
                   </h5>
                   <p className="text-lg md:text-xl lg:text-2xl">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptates odit earum dolore quidem hic.
+                    {data.desc}
                   </p>
                 </div>
               </motion.div>
