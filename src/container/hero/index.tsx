@@ -59,7 +59,7 @@ export const Hero = () => {
           className="mySwiper"
         >
           {/* Slide 1 */}
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <motion.div
               className="flex flex-col items-center gap-y-4 w-full max-w-[424px] mx-auto mb-12"
               initial="hidden"
@@ -77,7 +77,7 @@ export const Hero = () => {
                 iste perferendis expedita.
               </p>
             </motion.div>
-          </SwiperSlide>
+          </SwiperSlide> */}
 
           {/* Slide 2 */}
           <SwiperSlide>
@@ -92,10 +92,10 @@ export const Hero = () => {
                 BUILDING NEW PARADIGM
               </h4>
               <p className="font-medium text-sm sm:text-base md:text-lg lg:text-[18px] text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                in aperiam similique id, odio optio ab blanditiis eligendi modi
-                odit nostrum voluptatem aspernatur sit corporis porro ratione
-                iste perferendis expedita.
+                By combining cutting-edge technology with a user-centric
+                approach, Washing AI empowers individuals to take control of
+                their financial future while safeguarding their sensitive
+                information.
               </p>
               <div className="mt-4">
                 <Button onClick={() => alert("Read More")} label="Read More" />
