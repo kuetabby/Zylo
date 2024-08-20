@@ -2,7 +2,7 @@ export const contractAddress = "-";
 export const pairAddress = "-";
 
 export const socialsLink = {
-  whitepaper: "/",
+  whitepaper: "https://whitepaper.washingai.io/",
   twitter: "https://x.com/Washing_Ai",
   telegram: "https://t.me/washing_ai",
   medium: "https://medium.com",
