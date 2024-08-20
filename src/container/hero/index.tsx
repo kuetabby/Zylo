@@ -9,7 +9,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css"; // Import Swiper styles
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { socialsLink } from "@/constant/links";
+import { findUsLink, socialsLink } from "@/constant/links";
 import Link from "next/link";
 
 export const Hero = () => {
@@ -74,7 +74,14 @@ export const Hero = () => {
                 By combining cutting-edge technology with a user-centric approach, Washing AI empowers individuals to take control of their financial future while safeguarding their sensitive information.
               </p>
               <div className="mt-4">
-                <Button onClick={() => alert("Read More")} label="Read More" />
+                <Link
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href={socialsLink.whitepaper}
+                  className="no-underline hover:underline"
+                >
+                  <Button label="Read More" />
+                </Link>
               </div>
             </motion.div>
           </SwiperSlide>
@@ -145,7 +152,7 @@ export const Hero = () => {
               href={socialsLink.whitepaper}
             // className="no-underline hover:underline"
             >
-              <Button onClick={() => alert("Read More")} label="Read More" />
+              <Button label="Read More" />
             </Link>
           </div>
         </motion.div>
