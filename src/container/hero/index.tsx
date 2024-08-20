@@ -59,7 +59,7 @@ export const Hero = () => {
           className="mySwiper"
         >
           {/* Slide 1 */}
-          {/* <SwiperSlide>
+          <SwiperSlide>
             <motion.div
               className="flex flex-col items-center gap-y-4 w-full max-w-[424px] mx-auto mb-12"
               initial="hidden"
@@ -77,7 +77,7 @@ export const Hero = () => {
                 <Button onClick={() => alert("Read More")} label="Read More" />
               </div>
             </motion.div>
-          </SwiperSlide> */}
+          </SwiperSlide>
 
           {/* Slide 2 */}
           {/* <SwiperSlide>
