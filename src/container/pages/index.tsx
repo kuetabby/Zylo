@@ -43,7 +43,7 @@ export const Pages = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h4 className="block lg:hidden font-bold text-3xl md:text-4xl lg:text-5xl">
-            About WashingAI
+            About Washing AI
           </h4>
           <div className="w-full lg:w-1/2 flex items-center justify-center">
             <video
@@ -59,7 +59,7 @@ export const Pages = () => {
           </div>
           <div className="w-full lg:w-1/2 flex flex-col gap-8">
             <h4 className="hidden lg:block font-bold text-3xl md:text-4xl lg:text-5xl">
-              About WashingAI
+              About Washing AI
             </h4>
             <p className="text-lg md:text-xl lg:text-2xl">
               Washing AI is a decentralized application (dApp) built on the
@@ -77,7 +77,7 @@ export const Pages = () => {
               >
                 <Button
                   // onClick={() => window.open(socialsLink.whatsapp, "_blank")}
-                  label="WashingAI Bot"
+                  label="Washing AI Bot"
                 />
               </Link>
 
@@ -105,14 +105,14 @@ export const Pages = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h4 className="block lg:hidden font-bold text-[32px] sm:text-[48px] lg:text-[58px]">
-            WashingAI{" "}
+            Washing AI{" "}
             <span className="bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent">
               Tokenomics
             </span>
           </h4>
           <div className="w-full lg:w-1/2 order-2 lg:order-1">
             <h4 className="hidden lg:block font-bold text-[32px] sm:text-[48px] lg:text-[58px]">
-              WashingAI{" "}
+              Washing AI{" "}
               <span className="bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent">
                 Tokenomics
               </span>
@@ -125,20 +125,20 @@ export const Pages = () => {
             </p> */}
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-10 mt-8">
               <div>
-                <h4 className="font-bold bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent text-[32px] sm:text-[48px] lg:text-[58px]">
-                  -
+                <h4 className="font-bold bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent text-[30px] sm:text-[50px] lg:text-[33px]">
+                  WASH
                 </h4>
                 <p>Name</p>
               </div>
               <div>
-                <h4 className="font-bold bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent text-[32px] sm:text-[48px] lg:text-[58px]">
-                  -
+                <h4 className="font-bold bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent text-[30px] sm:text-[50px] lg:text-[33px]">
+                  $WASH
                 </h4>
                 <p>Ticker</p>
               </div>
               <div>
-                <h4 className="font-bold bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent text-[32px] sm:text-[48px] lg:text-[58px]">
-                  -
+                <h4 className="font-bold bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent text-[30px] sm:text-[50px] lg:text-[33px]">
+                  100,000,000
                 </h4>
                 <p>Total Supply</p>
               </div>

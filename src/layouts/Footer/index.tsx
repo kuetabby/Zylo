@@ -76,7 +76,7 @@ export const Footer = () => {
       </div>
       <div className="flex flex-col md:flex-row md:justify-between items-center gap-8">
         <div className="order-3 md:order-1 text-sm">
-          <h5>&copy; WashingAI 2024 All rights reserved.</h5>
+          <h5>&copy; Washing AI 2024 All rights reserved.</h5>
         </div>
         <div className="order-2 md:order-2 flex flex-wrap justify-center md:justify-start gap-4 text-sm">
           <Link
