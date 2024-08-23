@@ -72,7 +72,7 @@ export const Pages = () => {
               <Link
                 rel="noopener noreferrer"
                 target="_blank"
-                href={socialsLink.whatsapp}
+                href={socialsLink.bot}
                 className="no-underline hover:underline"
               >
                 <Button

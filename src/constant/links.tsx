@@ -7,8 +7,7 @@ export const socialsLink = {
   telegram: "https://t.me/washing_ai",
   medium: "https://medium.com",
   email: "mailto:support@washingai.io",
-  bot: "https://t.me/",
-  whatsapp: "https://wa.me/",
+  bot: "",
 };
 
 export const findUsLink = {
