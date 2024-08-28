@@ -1,4 +1,4 @@
-import { TwitterOutlined, LinkedinOutlined } from "@ant-design/icons";
+import { XOutlined, LinkedinOutlined } from "@ant-design/icons";
 import Link from "next/link";
 import { socialsLink, findUsLink } from "@/constant/links";
 export const Footer = () => {
@@ -119,7 +119,7 @@ export const Footer = () => {
           </Link>
           <Link href={socialsLink.twitter} className="no-underline">
             <div className="flex h-8 w-8 items-center justify-center rounded-full border border-white">
-              <TwitterOutlined />
+              <XOutlined />
             </div>
           </Link>
         </div>
