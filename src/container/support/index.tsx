@@ -61,7 +61,6 @@ export const Support = () => {
 
   return (
     <section
-      id="faq"
       className="bg-no-repeat bg-center p-8"
       style={{
         backgroundImage: `url("/background-support.png")`,
@@ -143,6 +142,7 @@ export const Support = () => {
           </div>
         </motion.div>
 
+        <div className="h-12" id="faq" />
         {/* FAQ Section */}
         <motion.div
           whileInView="visible"

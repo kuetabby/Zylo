@@ -32,6 +32,7 @@ export const Pages = () => {
       }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
+      <div className="h-12" />
       <div className="m-0 lg:m-10">
         {/* Video Section */}
         <motion.div
