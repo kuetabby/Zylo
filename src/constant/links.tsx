@@ -1,4 +1,4 @@
-export const contractAddress = "-";
+export const contractAddress = "0xB4f8acaB84AaE537c802482e1a399E8BAdDA9244";
 export const pairAddress = "-";
 
 export const socialsLink = {
@@ -7,7 +7,7 @@ export const socialsLink = {
   telegram: "https://t.me/washing_ai",
   medium: "https://medium.com",
   email: "mailto:support@washingai.io",
-  bot: "",
+  bot: "https://wa.me/message/ZYK7WE4TJ4KAG1",
 };
 
 export const findUsLink = {
