@@ -1,5 +1,5 @@
 export const contractAddress = "0xB4f8acaB84AaE537c802482e1a399E8BAdDA9244";
-export const pairAddress = "-";
+export const pairAddress = "0x06d1d5d076cfe3fc3c46622e8ee00a8062be499d";
 
 export const socialsLink = {
   whitepaper: "https://whitepaper.washingai.io/",
