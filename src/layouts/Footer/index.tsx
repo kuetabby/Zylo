@@ -1,6 +1,7 @@
 import { XOutlined, LinkedinOutlined } from "@ant-design/icons";
 import Link from "next/link";
 import { socialsLink, findUsLink } from "@/constant/links";
+
 export const Footer = () => {
   return (
     <footer className="p-8 m-auto text-white max-w-screen-2xl">
