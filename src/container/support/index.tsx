@@ -65,12 +65,14 @@ export const Support = () => {
 
   return (
     <section
-      className="bg-no-repeat bg-center p-8"
+      className="bg-no-repeat bg-center p-8 relative"
       style={{
         backgroundImage: `url("/background-support.png")`,
         height: "auto",
       }}
     >
+      <div className="absolute top-0 right-0 w-full h-[200px] bg-gradient-to-t from-transparent to-black z-[1000]" />
+
       <div className="m-0 lg:m-10">
         {/* First Section */}
         <motion.div
@@ -177,6 +179,7 @@ export const Support = () => {
           </div>
         </motion.div>
       </div>
+      <div className="absolute bottom-0 left-0 w-full h-[200px] bg-gradient-to-t from-black to-transparent z-[1000]" />
     </section>
   );
 };
