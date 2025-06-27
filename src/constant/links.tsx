@@ -3,7 +3,7 @@ export const pairAddress = "-";
 
 export const socialsLink = {
   whitepaper: "/",
-  twitter: "https://x.com/",
+  twitter: "https://x.com/ZyloEcosystem",
   telegram: "https://t.me/",
   medium: "https://medium.com",
   email: "mailto:",
