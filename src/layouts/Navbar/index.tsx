@@ -12,7 +12,7 @@ export const Navbar = () => {
   return (
     <nav
       className={
-        "sticky top-0 px-8 py-2 lg:py-0 sm:py-4 xs:py-4 mb-4 z-20 bg-black"
+        "sticky top-0 px-8 py-2 lg:py-0 sm:py-4 xs:py-4 mb-4 z-[2000] bg-black"
       }
     >
       <div className="m-auto max-w-screen-2xl flex items-center justify-between">
