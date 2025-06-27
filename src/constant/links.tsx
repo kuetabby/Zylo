@@ -1,20 +1,21 @@
-export const contractAddress = "0xB4f8acaB84AaE537c802482e1a399E8BAdDA9244";
-export const pairAddress = "0x06d1d5d076cfe3fc3c46622e8ee00a8062be499d";
+export const contractAddress = "-";
+export const pairAddress = "-";
 
 export const socialsLink = {
-  whitepaper: "https://whitepaper.washingai.io/",
-  twitter: "https://x.com/Washing_Ai",
-  telegram: "https://t.me/washing_ai",
+  whitepaper: "/",
+  twitter: "https://x.com/",
+  telegram: "https://t.me/",
   medium: "https://medium.com",
-  email: "mailto:support@washingai.io",
-  bot: "https://wa.me/message/ZYK7WE4TJ4KAG1",
+  email: "mailto:",
+  bot: "/",
 };
 
 export const findUsLink = {
   dextools: `http://dextools.io/app/ether/pair-explorer/${pairAddress}`,
-  dexscreener: `https://dexscreener.com/ethereum/${contractAddress}`,
+  dexscreener: `https://dexscreener.com/solana/${contractAddress}`,
   solidproof: "https://app.solidproof.io/projects/",
   etherscan: `https://etherscan.io/token/${contractAddress}`,
   uniswap: `https://app.uniswap.org/tokens/ethereum/${contractAddress}`,
   coingecko: `https://www.coingecko.com/en/coins/`,
+  pumpfun: `https://pump.fun/coin/${contractAddress}`,
 };

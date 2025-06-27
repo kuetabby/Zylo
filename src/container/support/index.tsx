@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import DiscoverImg from "@/assets/img/mitre.png";
 import SearchImg from "@/assets/img/feature_search.png";
 import CableImg from "@/assets/img/cable.png";
 import DummyVideo from "@/assets/img/dummy-video.png";
@@ -15,47 +14,52 @@ export const Support = () => {
 
   const features = [
     {
-      img: CableImg,
-      label: "Privacy-Preserving Transactions",
-      desc: "Leveraging zero-knowledge proof technology, Washing AI ensures maximum anonymity for users by obfuscating transaction details.",
+      img: "/Icon_Aset.svg",
+      title: "Data Collection & Contextualization",
+      desc: "Upload your raw, unstructured data into Zylo. It could be customer information, market data, or any business-critical data",
     },
     {
-      img: CableImg,
-      label: "Fiat On-Ramps and Off-Ramps",
-      desc: "The platform facilitates seamless conversion between cryptocurrencies and fiat currencies, making it accessible to a broader audience and simplifying the process of entering and exiting the cryptocurrency market.",
+      img: "/Icon_Aset2.svg",
+      title: "MCP Activation",
+      desc: "Zylo applies Model Context Protocol (MCP) to your data, enriching it with context that makes it intelligent and actionable",
     },
     {
-      img: CableImg,
-      label: "Real-Time Market Analysis",
-      desc: "Employing advanced machine learning algorithms, Washing AI provides users with real-time insights into market trends and identifies potential profitable trading opportunities.",
+      img: "/Icon_Aset3.svg",
+      title: "Secure, Decentralized Storage",
+      desc: "Your data is securely encrypted and stored across decentralized networks, ensuring both privacy and reliability",
     },
     {
-      img: CableImg,
-      label: "High-Frequency Trading",
-      desc: "The platform offers a sniper bot capable of executing trades with minimal latency.",
+      img: "/Icon_Aset4.svg",
+      title: "Real-Time Insights",
+      desc: "Access your data instantly. Zylo delivers actionable insights in real-time, giving you the tools to make data-driven decisions faster than ever before",
+    },
+    {
+      img: "/Icon_Aset5.svg",
+      title: "Seamless Integration",
+      desc: "Easily integrate Zylo with your existing systems and workflows, ensuring a smooth and efficient process with minimal disruption",
     },
   ];
 
   const faq = [
     {
       id: 1,
-      label: "How does Washing AI protect my privacy?",
-      desc: "Washing AI uses zero-knowledge proof technology to ensure your transactions are private and secure.This technology obfuscates transaction details, providing maximum anonymity and safeguarding your sensitive information.",
+      label: "What is Zylo?",
+      desc: "Zylo is a cutting-edge AI-driven platform designed to transform raw, unstructured data into actionable, intelligent insights",
     },
     {
       id: 2,
-      label: "How do I use the WhatsApp bot?",
-      desc: "The WhatsApp bot provides a convenient and familiar way to interact with Washing AI. You can use it to check your balance, initiate transactions, receive market updates, and more—all from within the WhatsApp interface.",
+      label: "How does Zylo ensure data security?",
+      desc: "Zylo uses decentralized storage with end-to-end encryption to protect your data",
     },
     {
       id: 3,
-      label: "Is Washing AI suitable for beginners?      ",
-      desc: "Yes, Washing AI is designed to be user-friendly and accessible to both beginners and experienced traders.",
+      label: "Is Zylo compliant with industry regulations?",
+      desc: "It is designed to meet the regulatory standards of industries such as finance, healthcare, and legal, ensuring your data management practices are secure and compliant with the latest standards.",
     },
     {
       id: 4,
-      label: "How secure is Washing AI?",
-      desc: "Washing AI prioritizes security by implementing state-of-the-art encryption and privacy-preserving technologies. Your data and assets are protected with the highest standards.",
+      label: "How can I get started with Zylo?",
+      desc: "Getting started with Zylo is easy. Simply sign up on our website, integrate your data, and let Zylo do the rest.",
     },
   ];
 
@@ -79,41 +83,22 @@ export const Support = () => {
         >
           <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl text-center">
             {/* WashingAI:{" "} */}
-            <span className="bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent">
-              A Deep Dive
+            How
+            <span className="bg-gradient-to-r from-[#9800bf] to-[#d46aff] bg-clip-text text-transparent mx-2">
+              Zylo
             </span>
+            Works
           </h1>
-          <p className="w-full text-lg md:text-xl lg:text-2xl text-center">
-            Washing AI integrates a WhatsApp bot to provide users with a
-            convenient and user-friendly interface for interacting with the
-            platform.
+          <p className="w-full text-base md:text-lg lg:text-xl text-center">
+            Zylo integrates Model Context Protocol (MCP) with cutting-edge AI to
+            turn raw data into valuable, context-aware insights that businesses
+            can act on in real time.
           </p>
 
           {/* Individual Features */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
             {/* Individual Features */}
-            {[
-              {
-                img: DiscoverImg,
-                title: "Privacy-Preserving Transactions",
-                desc: "Leveraging zero-knowledge proof technology, Washing AI ensures maximum anonymity for users by obfuscating transaction details",
-              },
-              {
-                img: DiscoverImg,
-                title: "Fiat On-Ramps and Off-Ramps",
-                desc: "The platform facilitates seamless conversion between cryptocurrencies and fiat currencies, making it accessible to a broader audience and simplifying the process of entering and exiting the cryptocurrency market",
-              },
-              {
-                img: DiscoverImg,
-                title: "Real-Time Market Analysis",
-                desc: "Employing advanced machine learning algorithms, Washing AI provides users with real-time insights into market trends and identifies potential profitable trading opportunities",
-              },
-              {
-                img: DiscoverImg,
-                title: "High-Frequency Trading",
-                desc: "The platform offers a sniper bot capable of executing trades with minimal latency. This feature is essential for traders seeking to capitalize on short-term price fluctuations and gain a competitive edge.",
-              },
-            ].map((item, index) => (
+            {features.map((item, index) => (
               <motion.div
                 key={index}
                 className="flex items-start gap-4"
@@ -129,13 +114,15 @@ export const Support = () => {
                 <Image
                   src={item.img}
                   alt={`Feature ${index + 1}`}
-                  className="w-20 h-auto p-4 border rounded-lg border-[#1F8BF0]"
+                  width={50}
+                  height={50}
+                  className="w-24 h-auto p-4 border-2 rounded-lg border-[#9800bf] bg-black"
                 />
                 <div className="flex flex-col gap-3">
-                  <h5 className="font-semibold text-xl md:text-2xl lg:text-3xl">
+                  <h5 className="font-semibold text-xl lg:text-2xl">
                     {item.title}
                   </h5>
-                  <p className="text-sm lg:text-lg">{item.desc}</p>
+                  <p className="text-sm lg:text-base">{item.desc}</p>
                 </div>
               </motion.div>
             ))}
@@ -147,15 +134,13 @@ export const Support = () => {
         <motion.div
           whileInView="visible"
           viewport={{ once: false, amount: 0.3 }}
-          className="flex flex-col gap-y-12 md:gap-y-20 items-center justify-center p-4 mt-16"
+          className="flex flex-col gap-y-12 md:gap-y-20 items-center justify-center p-4 mt-10"
           initial="hidden"
           variants={fadeInUp}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl text-center">
-            <span className="bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent">
-              FAQ
-            </span>
+            FAQ
           </h1>
           {/* <p className="w-full md:w-2/3 lg:w-1/2 text-lg md:text-xl lg:text-2xl text-center">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi
@@ -178,14 +163,14 @@ export const Support = () => {
                   delay: data.id * 0.2,
                 }}
               >
-                <h1 className="font-semibold text-3xl md:text-4xl lg:text-5xl bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent">
+                <h1 className="font-semibold text-3xl md:text-4xl lg:text-5xl bg-gradient-to-r from-[#9800bf] to-[#d46aff] bg-clip-text text-transparent">
                   {data.id < 10 ? `0${data.id}` : data.id}.
                 </h1>
-                <div className="flex flex-col gap-3 border-b p-4 border-[#1F8BF0]">
-                  <h5 className="font-semibold text-xl md:text-2xl lg:text-3xl">
+                <div className="flex flex-col gap-3 border-b-2 p-4 border-[#9800bf]">
+                  <h5 className="font-semibold text-xl lg:text-2xl">
                     {data.label}
                   </h5>
-                  <p className="text-lg md:text-xl lg:text-2xl">{data.desc}</p>
+                  <p className="text-sm lg:text-base">{data.desc}</p>
                 </div>
               </motion.div>
             ))}

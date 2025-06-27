@@ -63,7 +63,7 @@ export const Footer = () => {
             </Link>
           </div>
         </div> */}
-        <div className="w-full md:w-1/4 flex flex-wrap justify-end">
+        {/* <div className="w-full md:w-1/4 flex flex-wrap justify-end">
           <div className="font-bold text-xl !text-left mb-2">Contact Us</div>
           <div className="w-full text-right my-2">
             <Link
@@ -73,36 +73,36 @@ export const Footer = () => {
               support@washingai.io
             </Link>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="flex flex-col md:flex-row md:justify-between items-center gap-8">
         <div className="order-3 md:order-1 text-sm">
-          <h5>&copy; Washing AI 2024 All rights reserved.</h5>
+          <h5>&copy; Zylo 2025 All rights reserved.</h5>
         </div>
         <div className="order-2 md:order-2 flex flex-wrap justify-center md:justify-start gap-4 text-sm">
           <Link
-            href={findUsLink.etherscan}
+            href={findUsLink.pumpfun}
             className="no-underline hover:underline"
           >
-            Contract
+            Pumpfun
           </Link>
           <Link
             rel="noopener noreferrer"
             target="_blank"
+            href={findUsLink.dexscreener}
+            className="no-underline hover:underline"
+          >
+            Dexscreener
+          </Link>
+          <Link
             href={socialsLink.whitepaper}
             className="no-underline hover:underline"
           >
             Documentation
           </Link>
-          <Link
-            href={findUsLink.dextools}
-            className="no-underline hover:underline"
-          >
-            Chart
-          </Link>
         </div>
         <div className="order-1 md:order-3 flex gap-4">
-          <Link href={socialsLink.telegram} className="no-underline">
+          {/* <Link href={socialsLink.telegram} className="no-underline">
             <div className="flex h-8 w-8 items-center justify-center rounded-full border border-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +117,7 @@ export const Footer = () => {
                 ></path>
               </svg>
             </div>
-          </Link>
+          </Link> */}
           <Link href={socialsLink.twitter} className="no-underline">
             <div className="flex h-8 w-8 items-center justify-center rounded-full border border-white">
               <XOutlined />

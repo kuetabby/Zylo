@@ -31,16 +31,40 @@ export const Hero = () => {
   return (
     <section id="hero" className="relative p-8 m-0 lg:m-10">
       <motion.div
-        className="relative flex items-center justify-center"
+        className="relative flex flex-wrap items-center justify-center"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.5 }}
         variants={fadeInDown}
       >
-        <Image src={HeroImage} alt="Hero Image" className="-z-10" />
-        <h1 className="absolute top-12 font-bold text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[128px] text-center">
-          WASHING AI
-        </h1>
+        <motion.div
+          className="lg:hidden flex flex-col items-center gap-y-4 w-full max-w-[424px] mx-auto mb-12"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.5 }}
+          variants={fadeInUp}
+        >
+          <h1 className="block lg:hidden font-bold text-[#9800bf] text-6xl md:text-7xl lg:text-8xl xl:text-[128px] text-center">
+            Zylo
+          </h1>
+          <h4 className="font-semibold text-xl sm:text-2xl md:text-3xl lg:text-[35px] my-4 text-center">
+            UNLOCKING THE FUTURE OF DATA
+          </h4>
+        </motion.div>
+
+        <Image
+          src={"/Mascot.svg"}
+          alt="Hero Image"
+          priority
+          width={200}
+          height={200}
+          className="w-full h-[75vh] -z-10"
+        />
+
+        <div className="absolute bottom-0 left-0 w-full h-[200px] bg-gradient-to-t from-black to-transparent z-50"></div>
+
+        {/* <h1 className="absolute top-12 font-bold text-[#9800bf] text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[128px] text-center">
+          Zylo
+        </h1> */}
       </motion.div>
 
       <div className="block lg:hidden">
@@ -61,17 +85,17 @@ export const Hero = () => {
           {/* Slide 1 */}
           <SwiperSlide>
             <motion.div
-              className="flex flex-col items-center gap-y-4 w-full max-w-[424px] mx-auto mb-12"
+              className="flex flex-col items-center gap-y-4 w-full max-w-[500px] mx-auto mb-12"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: false, amount: 0.5 }}
               variants={fadeInUp}
             >
-              <h4 className="font-semibold text-xl sm:text-2xl md:text-3xl lg:text-[35px] my-4 text-center">
-                BUILDING NEW PARADIGM
-              </h4>
               <p className="font-medium text-sm sm:text-base md:text-lg lg:text-[18px] text-center">
-                By combining cutting-edge technology with a user-centric approach, Washing AI empowers individuals to take control of their financial future while safeguarding their sensitive information.
+                By merging contextual AI with decentralized security, Zylo helps
+                businesses transform their raw data into actionable insights,
+                empowering smarter decisions and ensuring full compliance and
+                protection along the way
               </p>
               <div className="mt-4">
                 <Link
@@ -137,20 +161,25 @@ export const Hero = () => {
           viewport={{ once: false, amount: 0.5 }}
           variants={fadeInUp}
         >
-          <h4 className="font-semibold text-[35px] text-right my-4">
-            BUILDING NEW PARADIGM
+          <h1 className="font-bold text-[#9800bf] text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[128px] text-right">
+            Zylo
+          </h1>
+
+          <h4 className="font-semibold text-5xl text-right my-4">
+            UNLOCKING THE FUTURE OF DATA
           </h4>
           <p className="font-medium text-[18px] text-right">
-            By combining cutting-edge technology with a user-centric approach,
-            Washing AI empowers individuals to take control of their financial
-            future while safeguarding their sensitive information.
+            By merging contextual AI with decentralized security, Zylo helps
+            businesses transform their raw data into actionable insights,
+            empowering smarter decisions and ensuring full compliance and
+            protection along the way
           </p>
           <div>
             <Link
               rel="noopener noreferrer"
               target="_blank"
               href={socialsLink.whitepaper}
-            // className="no-underline hover:underline"
+              // className="no-underline hover:underline"
             >
               <Button label="Read More" />
             </Link>
@@ -165,39 +194,17 @@ export const Hero = () => {
         viewport={{ once: false, amount: 0.5 }}
         variants={fadeIn}
       >
-        <div className="lg:absolute lg:-bottom-10 flex flex-col lg:flex-row items-center justify-between gap-10">
-          <div className="w-autos flex flex-col lg:flex-row gap-4 border border-[#1F8BF0] rounded-2xl bg-transparent backdrop-blur-md p-8">
+        <div className="lg:absolute lg:-bottom-10 flex flex-col lg:flex-row items-center justify-between gap-10 z-[1000]">
+          <div className="w-autos flex flex-col lg:flex-row gap-4 border-2 border-[#9800bf] rounded-2xl bg-transparent backdrop-blur-md p-8">
             <Image src={Cubes} alt="Cubes Img" className="m-auto" />
             <div className="w-auto">
-              {/* <h4 className="font-bold bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent text-xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-[58px]">
-                76,286K+
-              </h4> */}
-              {/* <h4 className="font-semibold text-lg sm:text-xl md:text-2xl lg:text-[28px]">
-                Lorem Ipsum dolorsin.
-              </h4> */}
               <p className="text-sm sm:text-base md:text-lg lg:text-xl">
-                a revolutionary platform designed to meet the evolving needs of
-                cryptocurrency users, with a focus on privacy and accessibility.
+                A transformative platform designed to meet the growing needs of
+                businesses, with a focus on data intelligence, security, and
+                scalability
               </p>
             </div>
           </div>
-          {/* <div className="">
-            <h4 className="font-normal text-[36px]">
-              ART AND <span className="font-bold">DESIGN</span>
-            </h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Similique doloremque eveniet eius voluptates ab? Velit beatae
-              doloribus odio, quae harum ut rem rerum dolor accusantium! Totam
-              similique architecto ipsam tempora!
-            </p>
-          </div> */}
-          {/* <div className="border border-[#1F8BF0] rounded-2xl bg-transparent backdrop-blur p-8">
-            <h4 className="font-bold bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent text-[58px]">
-              17+
-            </h4>
-            <h4 className="font-semibold text-[28px]">Years of Experiences</h4>
-          </div> */}
         </div>
       </motion.div>
     </section>

@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
-import DummyVideo from "@/assets/img/dummy-video.png";
+// import Image from "next/image";
+// import DummyVideo from "@/assets/img/dummy-video.png";
 // import DummyImage from "@/assets/img/dummy-image.png";
 import "./style.css";
 // import { ArrowRightOutlined } from "@ant-design/icons";
@@ -44,7 +44,7 @@ export const Pages = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h4 className="block lg:hidden font-bold text-3xl md:text-4xl lg:text-5xl">
-            About Washing AI
+            About Zylo
           </h4>
           <div className="w-full lg:w-1/2 flex items-center justify-center">
             <video
@@ -60,14 +60,13 @@ export const Pages = () => {
           </div>
           <div className="w-full lg:w-1/2 flex flex-col gap-8">
             <h4 className="hidden lg:block font-bold text-3xl md:text-4xl lg:text-5xl">
-              About Washing AI
+              About <span className="text-[#9800bf]">Zylo</span>
             </h4>
-            <p className="text-lg md:text-xl lg:text-2xl">
-              Washing AI is a decentralized application (dApp) built on the
-              Ethereum blockchain. It harnesses the power of smart contracts and
-              artificial intelligence (AI) to provide a comprehensive suite of
-              tools aimed at enhancing user privacy and optimizing trading
-              efficiency within the cryptocurrency ecosystem.
+            <p className="text-base md:text-lg lg:text-xl">
+              Zylo is shaping the future of AI-powered, data-driven solutions.
+              As industries around the world continue to generate massive
+              amounts of unstructured data, businesses need more than just
+              storage—they need intelligent, actionable insights.
             </p>
             <div className="flex flex-col md:flex-row gap-4 md:gap-8">
               <Link
@@ -78,7 +77,7 @@ export const Pages = () => {
               >
                 <Button
                   // onClick={() => window.open(socialsLink.whatsapp, "_blank")}
-                  label="Washing AI Bot"
+                  label="DAPP"
                 />
               </Link>
 
@@ -94,7 +93,7 @@ export const Pages = () => {
           </div>
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           className="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-40 my-60"
           initial="hidden"
           whileInView="visible"
@@ -118,12 +117,6 @@ export const Pages = () => {
                 Tokenomics
               </span>
             </h4>
-            {/* <p className="mt-4 text-[16px] sm:text-[18px]">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatum cupiditate ipsam recusandae atque necessitatibus
-              voluptates ut impedit iure provident iste esse qui, totam corrupti
-              vero, doloremque sed praesentium molestias quisquam.
-            </p> */}
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-10 mt-8">
               <div>
                 <h4 className="font-bold bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] bg-clip-text text-transparent text-[30px] sm:text-[50px] lg:text-[33px]">
@@ -157,7 +150,7 @@ export const Pages = () => {
               Your browser does not support the video tag.
             </video>
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* <motion.div
           className="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-40 my-20"

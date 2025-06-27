@@ -7,18 +7,11 @@ import { IndexLayout } from "@/layouts";
 
 import "./globals.css";
 
-import localFont from "next/font/local";
+import { moonrising } from "@/utils/font";
 
-// Font files can be colocated inside of `app`
-const myFont = localFont({
-  src: "./font/Audiowide-Regular.ttf",
-  display: "swap",
-});
-
-const app_title = "Washing AI";
-const app_name = "Washing AI";
-const description =
-  "A revolutionary platform designed to meet the evolving needs of cryptocurrency users, with a focus on privacy and accessibility";
+const app_title = "Zylo";
+const app_name = "Zylo";
+const description = "AI for the Decentralized Future";
 
 export const metadata: Metadata = {
   title: app_title,
@@ -31,16 +24,24 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
     apple: [
-      { url: "/app-apple-icon.png" },
-      { url: "/app-apple-icon-192.png", sizes: "192x192", type: "image/png" },
-      { url: "/app-apple-icon-512.png", sizes: "512x512", type: "image/png" },
+      { url: "/apple-touch-icon.png" },
+      {
+        url: "/android-chrome-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        url: "/android-chrome-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: app_name,
     description,
-    images: ["/app-apple-icon.png"],
+    images: ["/apple-touch-icon.png"],
   },
   openGraph: {
     type: "website",
@@ -77,7 +78,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={"scroll-smooth bg-black " + myFont.className}>
+    <html
+      lang="en"
+      className={"scroll-smooth bg-black " + moonrising.className}
+    >
       <body>
         <AntdRegistry>
           <IndexLayout>{children}</IndexLayout>

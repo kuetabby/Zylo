@@ -25,10 +25,10 @@ export const Button: React.FC<ButtonProps> = ({
 
   const variantStyles = {
     primary:
-      "bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] text-white hover:from-[#6DEEDC] to-[#1F8BF0] focus:ring-yellow-400",
+      "bg-gradient-to-r from-[#9800bf] to-[#d46aff] text-white hover:from-[#d46aff] to-[#9800bf] focus:ring-yellow-400 border-2 border-transparent",
     ghost:
-      "bg-transparent border border-[#1F8BF0] bg-clip-border text-transparent hover:text-white focus:ring-yellow-400 " +
-      "bg-gradient-to-r from-[#1F8BF0] to-[#6DEEDC] hover:from-[#6DEEDC] to-[#1F8BF0] " +
+      "bg-transparent border-2 border-[#9800bf] bg-clip-border text-white focus:ring-yellow-400 " +
+      "bg-gradient-to-r from-[#9800bf] to-[#d46aff] hover:from-[#d46aff] to-[#9800bf] " +
       "hover:bg-gradient-to-r bg-clip-text hover:bg-clip-padding",
   };
 
