@@ -2,7 +2,7 @@ export const contractAddress = "-";
 export const pairAddress = "-";
 
 export const socialsLink = {
-  whitepaper: "/",
+  whitepaper: "https://docs.tryzylo.xyz",
   twitter: "https://x.com/ZyloEcosystem",
   telegram: "https://t.me/",
   medium: "https://medium.com",
