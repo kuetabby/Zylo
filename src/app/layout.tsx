@@ -11,7 +11,7 @@ import { moonrising } from "@/utils/font";
 
 const app_title = "Zylo";
 const app_name = "Zylo";
-const description = "AI for the Decentralized Future";
+const description = "Unlock Your Data’s True Power";
 
 export const metadata: Metadata = {
   title: app_title,
